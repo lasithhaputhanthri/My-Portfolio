@@ -1,0 +1,117 @@
+.footerChild {
+  height: 330px;
+  width: 1920px;
+  position: relative;
+  background-color: var(--gray-800);
+  display: none;
+  max-width: 100%;
+}
+.home {
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  min-width: 46px;
+}
+.linkItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xs);
+}
+.awards,
+.contact,
+.myInterests,
+.projects,
+.tools {
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  min-width: 58px;
+}
+.contact,
+.myInterests,
+.projects,
+.tools {
+  min-width: 64px;
+}
+.contact,
+.myInterests,
+.tools {
+  min-width: 41px;
+}
+.contact,
+.myInterests {
+  min-width: 97px;
+}
+.contact {
+  min-width: 62px;
+}
+.footer,
+.footerContent,
+.siteLinks {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.siteLinks {
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 20px;
+  font-size: var(--body-regular-400-size);
+  color: var(--gray-50);
+  font-family: var(--body-regular-400);
+}
+.footer,
+.footerContent {
+  background-color: var(--gray-800);
+  box-sizing: border-box;
+}
+.footerContent {
+  width: 1641px;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-13xl) var(--padding-281xl);
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+.footer {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-141xl) 0 var(--padding-31xl);
+  z-index: 2;
+  text-align: left;
+  font-size: var(--heading-04-size);
+  color: var(--gray-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1525px) {
+  .footerContent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1225px) {
+  .footerContent {
+    padding-left: var(--padding-131xl);
+    padding-right: var(--padding-131xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 850px) {
+  .siteLinks {
+    flex-wrap: wrap;
+  }
+  .footerContent {
+    padding-left: var(--padding-56xl);
+    padding-right: var(--padding-56xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .footerContent {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

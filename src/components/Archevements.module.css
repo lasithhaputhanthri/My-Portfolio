@@ -1,0 +1,98 @@
+.awards {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 56px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.awardsIntro {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-17xl) var(--padding-xl);
+  box-sizing: border-box;
+  min-height: 128px;
+}
+.projectCard1 {
+  width: 1320px;
+  display: grid;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  max-width: 100%;
+  grid-template-columns: repeat(3, minmax(318px, 1fr));
+}
+.projectCard {
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.archevements,
+.portfolio,
+.projectCard {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.portfolio {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-51xl);
+}
+.archevements {
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-81xl) 0;
+  box-sizing: border-box;
+  z-index: 2;
+  text-align: left;
+  font-size: var(--heading-01-size);
+  color: var(--gray-900);
+  font-family: var(--body-regular-400);
+}
+@media screen and (max-width: 1225px) {
+  .projectCard1 {
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(318px, 551px));
+  }
+  .portfolio {
+    gap: var(--gap-16xl);
+  }
+  .archevements {
+    padding-top: var(--padding-46xl);
+    padding-bottom: var(--padding-46xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 850px) {
+  .awards {
+    font-size: var(--heading-02-size);
+    line-height: 45px;
+  }
+  .projectCard1 {
+    grid-template-columns: minmax(318px, 1fr);
+  }
+  .portfolio {
+    gap: var(--gap-mid);
+  }
+  .archevements {
+    gap: var(--gap-6xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .awards {
+    font-size: var(--font-size-10xl);
+    line-height: 34px;
+  }
+  .archevements {
+    padding-top: var(--padding-23xl);
+    padding-bottom: var(--padding-23xl);
+    box-sizing: border-box;
+  }
+}

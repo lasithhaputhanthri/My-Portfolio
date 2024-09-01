@@ -1,0 +1,169 @@
+.whatIDo1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 56px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.myWorkSpans {
+  align-self: stretch;
+  position: relative;
+  line-height: 24px;
+}
+.myWorkSpansAcrossPcbDesigWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: var(--body-large-600-size);
+  color: var(--gray-400);
+}
+.workProcess {
+  align-self: stretch;
+  gap: var(--gap-5xl);
+}
+.servicesDescription,
+.servicesDescriptionContainer,
+.workProcess {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.servicesDescriptionContainer {
+  align-self: stretch;
+}
+.servicesDescription {
+  width: 529px;
+  padding: var(--padding-281xl) 0 0;
+  box-sizing: border-box;
+  min-width: 529px;
+  max-width: 100%;
+}
+.loremIpsumDolor,
+.userExperienceUx {
+  width: 584px;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.userExperienceUx {
+  margin: 0;
+  font-size: inherit;
+  line-height: 100%;
+  font-weight: 600;
+  font-family: inherit;
+}
+.loremIpsumDolor {
+  font-size: var(--body-regular-400-size);
+  line-height: 24px;
+  font-family: var(--font-poppins);
+  color: var(--gray-700);
+}
+.serviceImage {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-500);
+}
+.whatIDoCard {
+  align-self: stretch;
+  box-shadow: 0 32px 96px rgba(28, 25, 25, 0.16);
+  border-radius: var(--br-7xs);
+  background-color: var(--gray-white);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-13xl) var(--padding-xl) var(--padding-13xl)
+    var(--padding-13xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-base);
+}
+.whatIDo,
+.whatIDoCard,
+.whatIDoCards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.whatIDoCards {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-5xl);
+  min-width: 421px;
+  font-size: var(--heading-04-size);
+  color: var(--gray-900);
+}
+.whatIDo {
+  align-self: stretch;
+  background-color: var(--gray-50);
+  flex-direction: row;
+  padding: var(--padding-131xl) var(--padding-281xl);
+  box-sizing: border-box;
+  gap: var(--gap-124xl);
+  z-index: 4;
+  text-align: left;
+  font-size: var(--heading-01-size);
+  color: var(--color-darkslategray-100);
+  font-family: var(--body-regular-400);
+}
+@media screen and (max-width: 1525px) {
+  .servicesDescription {
+    flex: 1;
+  }
+  .whatIDo {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1225px) {
+  .servicesDescription,
+  .whatIDoCards {
+    min-width: 100%;
+  }
+  .whatIDo {
+    gap: var(--gap-52xl);
+    padding: var(--padding-78xl) var(--padding-131xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 850px) {
+  .whatIDo1 {
+    font-size: var(--heading-02-size);
+    line-height: 45px;
+  }
+  .servicesDescriptionContainer {
+    gap: var(--gap-6xl);
+  }
+  .servicesDescription {
+    padding-top: var(--padding-176xl);
+    box-sizing: border-box;
+  }
+  .whatIDo {
+    gap: var(--gap-17xl);
+    padding: var(--padding-44xl) var(--padding-56xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .whatIDo1 {
+    font-size: var(--font-size-10xl);
+    line-height: 34px;
+  }
+  .userExperienceUx {
+    font-size: var(--font-size-lgi);
+    line-height: 19px;
+  }
+  .whatIDo {
+    gap: var(--gap-lg);
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

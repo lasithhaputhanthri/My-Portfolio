@@ -1,0 +1,63 @@
+.b {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 56px;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 16px;
+}
+.logoName {
+  height: 56px;
+  width: 56px;
+  border-radius: var(--br-981xl);
+  background-color: var(--primary-500);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.brooklyn {
+  margin: 0;
+  position: relative;
+  font-size: var(--heading-03-size);
+  line-height: 40px;
+  font-weight: 600;
+  font-family: var(--body-regular-400);
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-xs);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--heading-04-size);
+  color: var(--gray-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 850px) {
+  .brooklyn {
+    font-size: var(--font-size-7xl);
+    line-height: 32px;
+  }
+  .logo {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .b,
+  .brooklyn {
+    font-size: var(--font-size-lgi);
+    line-height: 45px;
+  }
+  .brooklyn {
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,319 @@
+.letsDiscussYour {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 50px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.wouldYouLike {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--body-large-600-size);
+  line-height: 24px;
+  color: var(--gray-400);
+}
+.adressCard,
+.discussionPrompt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.discussionPrompt {
+  align-self: stretch;
+  gap: var(--gap-base);
+}
+.adressCard {
+  gap: var(--gap-xs);
+  max-width: 100%;
+  font-size: var(--body-small-400-size);
+  color: var(--gray-700);
+}
+.image15Icon {
+  height: 45px;
+  width: 45px;
+  position: relative;
+  object-fit: cover;
+}
+.socialIcon {
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+.socialMediaCard {
+  box-shadow: 0 12px 64px rgba(28, 25, 25, 0.12);
+  border-radius: var(--br-9xs);
+  background-color: var(--primary-500);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-mini);
+}
+.socialIcon1 {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.socialMediaCard1 {
+  border-radius: var(--br-9xs);
+  background-color: var(--gray-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-mini);
+}
+.image17Icon {
+  height: 34px;
+  width: 34px;
+  position: absolute;
+  margin: 0 !important;
+  top: 6px;
+  left: 231px;
+  object-fit: contain;
+}
+.letsDiscussYourProject,
+.socialMedia {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.socialMedia {
+  flex-direction: row;
+  position: relative;
+  gap: var(--gap-xs);
+}
+.letsDiscussYourProject {
+  width: 481px;
+  flex-direction: column;
+  gap: var(--gap-16xl);
+  min-width: 481px;
+  max-width: 100%;
+}
+.name1 {
+  width: 61px;
+  border: 0;
+  outline: 0;
+  font-family: var(--body-regular-400);
+  font-size: var(--body-large-600-size);
+  background-color: transparent;
+  height: 24px;
+  position: relative;
+  line-height: 24px;
+  color: var(--primary-500);
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+}
+.name,
+.nameChild {
+  align-self: stretch;
+  box-sizing: border-box;
+}
+.nameChild {
+  height: 1.5px;
+  position: relative;
+  border-top: 1.5px solid var(--primary-500);
+}
+.name {
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  gap: var(--gap-sm);
+}
+.email1 {
+  width: 59px;
+  border: 0;
+  outline: 0;
+  font-family: var(--body-regular-400);
+  font-size: var(--body-large-600-size);
+  background-color: transparent;
+  height: 24px;
+  position: relative;
+  line-height: 24px;
+  color: var(--gray-500);
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+}
+.emailChild {
+  align-self: stretch;
+  height: 1.5px;
+  position: relative;
+  border-top: 1.5px solid var(--gray-100);
+  box-sizing: border-box;
+}
+.location1,
+.subject1 {
+  position: relative;
+  font-size: var(--body-large-600-size);
+  line-height: 24px;
+  font-family: var(--body-regular-400);
+  color: var(--gray-500);
+  text-align: center;
+  display: inline-block;
+}
+.location1 {
+  width: 76px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 24px;
+  padding: 0;
+}
+.subject1 {
+  width: 78px;
+  min-width: 78px;
+}
+.budgetSubject,
+.subject {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.subject {
+  height: 38px;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 var(--padding-203xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-sm);
+}
+.budgetSubject {
+  align-self: stretch;
+  flex-direction: row;
+}
+.message1 {
+  width: 86px;
+  border: 0;
+  outline: 0;
+  font-family: var(--body-regular-400);
+  font-size: var(--body-large-600-size);
+  background-color: transparent;
+  height: 24px;
+  position: relative;
+  line-height: 24px;
+  color: var(--gray-500);
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+}
+.message {
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+.information,
+.message {
+  align-self: stretch;
+  gap: var(--gap-5xl);
+}
+.information,
+.userInformation,
+.userInfromation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.userInformation {
+  margin: 0;
+  align-self: stretch;
+  gap: var(--gap-31xl);
+}
+.userInfromation {
+  width: 560px;
+  min-width: 560px;
+}
+.contact,
+.contactWrapper {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.contact {
+  width: 1320px;
+  box-shadow: 0 59px 124px rgba(0, 0, 0, 0.12);
+  border-radius: var(--br-mini);
+  background-color: var(--gray-white);
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-69xl);
+  gap: var(--gap-xl);
+  z-index: 5;
+}
+.contactWrapper {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  text-align: left;
+  font-size: var(--heading-02-size);
+  color: var(--gray-900);
+  font-family: var(--body-regular-400);
+}
+@media screen and (max-width: 1525px) {
+  .letsDiscussYourProject,
+  .userInfromation {
+    flex: 1;
+  }
+  .contact {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1225px) {
+  .contact {
+    padding-left: var(--padding-25xl);
+    padding-right: var(--padding-25xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 850px) {
+  .letsDiscussYour {
+    font-size: var(--font-size-11xl);
+    line-height: 40px;
+  }
+  .letsDiscussYourProject {
+    gap: var(--gap-mid);
+    min-width: 100%;
+  }
+  .subject {
+    padding-right: var(--padding-92xl);
+    box-sizing: border-box;
+  }
+  .userInformation,
+  .userInfromation {
+    gap: var(--gap-6xl);
+  }
+  .userInfromation {
+    min-width: 100%;
+  }
+  .contact {
+    padding: var(--padding-38xl) var(--padding-3xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .letsDiscussYour {
+    font-size: var(--font-size-4xl);
+    line-height: 30px;
+  }
+  .subject {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
