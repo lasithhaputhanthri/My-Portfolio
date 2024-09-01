@@ -1,0 +1,43 @@
+.loremIpsumDolor,
+.userExperienceUx {
+  width: 584px;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.userExperienceUx {
+  margin: 0;
+  font-size: inherit;
+  line-height: 100%;
+  font-weight: 600;
+  font-family: inherit;
+}
+.loremIpsumDolor {
+  font-size: var(--body-regular-400-size);
+  line-height: 24px;
+  color: var(--gray-700);
+}
+.whatIDoCard {
+  align-self: stretch;
+  border-radius: var(--br-7xs);
+  background-color: var(--gray-white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-13xl) var(--padding-xl) var(--padding-13xl)
+    var(--padding-13xl);
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--heading-04-size);
+  color: var(--gray-900);
+  font-family: var(--body-regular-400);
+}
+@media screen and (max-width: 450px) {
+  .userExperienceUx {
+    font-size: var(--font-size-lgi);
+    line-height: 19px;
+  }
+}

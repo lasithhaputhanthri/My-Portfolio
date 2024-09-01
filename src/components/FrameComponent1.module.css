@@ -1,0 +1,152 @@
+.helloIm {
+  margin: 0;
+}
+.helloImLasithContainer {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 84px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.introduction {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.passionateEngineeringStudent {
+  width: 648px;
+  position: relative;
+  font-size: var(--body-large-600-size);
+  line-height: 24px;
+  color: var(--gray-600);
+  white-space: pre-wrap;
+  display: inline-block;
+  max-width: 100%;
+}
+.heroInfo {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  max-width: 100%;
+  z-index: 3;
+}
+.button1 {
+  position: relative;
+  font-size: var(--body-regular-400-size);
+  line-height: 24px;
+  font-weight: 600;
+  font-family: var(--body-regular-400);
+  color: var(--gray-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 93px;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-5xl);
+  background-color: var(--primary-500);
+  border-radius: var(--br-9xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  white-space: nowrap;
+  z-index: 2;
+}
+.button:hover {
+  background-color: var(--color-darkorchid-100);
+}
+.arrowsDownload {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 24px;
+}
+.button3 {
+  position: relative;
+  font-size: var(--body-regular-400-size);
+  line-height: 24px;
+  font-weight: 600;
+  font-family: var(--body-regular-400);
+  color: var(--primary-500);
+  text-align: left;
+  display: inline-block;
+  min-width: 106px;
+}
+.button2,
+.heroActions {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.button2 {
+  cursor: pointer;
+  border: 1px solid var(--primary-500);
+  padding: var(--padding-3xs) var(--padding-4xl);
+  background-color: var(--gray-white);
+  border-radius: var(--br-9xs);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+  white-space: nowrap;
+  z-index: 2;
+}
+.button2:hover {
+  background-color: var(--color-gainsboro-100);
+  border: 1px solid var(--color-darkorchid-100);
+  box-sizing: border-box;
+}
+.heroActions {
+  gap: var(--gap-base);
+}
+.heroActions,
+.heroContent,
+.heroContentWrapper {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.heroContent {
+  width: 714px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-lgi);
+}
+.heroContentWrapper {
+  width: 1320px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl) var(--padding-364xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--display-size);
+  color: var(--gray-900);
+  font-family: var(--body-regular-400);
+}
+@media screen and (max-width: 850px) {
+  .helloImLasithContainer {
+    font-size: var(--font-size-39xl);
+    line-height: 67px;
+  }
+  .heroContentWrapper {
+    padding-bottom: var(--padding-230xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .helloImLasithContainer {
+    font-size: var(--font-size-24xl);
+    line-height: 50px;
+  }
+  .heroActions {
+    flex-wrap: wrap;
+  }
+}

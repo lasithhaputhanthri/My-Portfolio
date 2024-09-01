@@ -1,0 +1,63 @@
+.deviceComputer {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.deviceComputerWrapper {
+  border-radius: var(--br-7xs);
+  background-color: var(--color-thistle);
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xl);
+}
+.loremIpsumDolor,
+.research {
+  position: relative;
+  line-height: 24px;
+}
+.research {
+  font-weight: 600;
+}
+.loremIpsumDolor {
+  align-self: stretch;
+  font-size: var(--body-regular-400-size);
+  color: var(--gray-600);
+}
+.researchParent,
+.workProcessCard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.researchParent {
+  width: 248px;
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+.workProcessCard {
+  align-self: stretch;
+  height: 324px;
+  border-radius: var(--br-xs);
+  background-color: var(--gray-white);
+  flex-direction: row;
+  padding: var(--padding-13xl);
+  box-sizing: border-box;
+  gap: var(--gap-13xl);
+  text-align: left;
+  font-size: var(--heading-05-size);
+  color: var(--gray-900);
+  font-family: var(--body-regular-400);
+}
+@media screen and (max-width: 450px) {
+  .research {
+    font-size: var(--body-regular-400-size);
+    line-height: 19px;
+  }
+  .workProcessCard {
+    gap: var(--gap-base);
+  }
+}

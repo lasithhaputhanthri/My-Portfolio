@@ -1,0 +1,59 @@
+.locationAndMapLocationPi {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.locationAndMapLocationPiWrapper {
+  border-radius: var(--br-9xs);
+  background-color: var(--color-thistle);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs);
+}
+.address,
+.newMexico31134 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 90px;
+}
+.newMexico31134 {
+  font-size: var(--body-regular-400-size);
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--gray-900);
+  min-width: 112px;
+  white-space: nowrap;
+}
+.addressCard,
+.addressParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.addressCard {
+  border-radius: var(--br-3xs);
+  background-color: var(--gray-white);
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-5xl) var(--padding-120xl) var(--padding-5xl)
+    var(--padding-5xl);
+  gap: var(--gap-smi);
+  text-align: left;
+  font-size: var(--body-small-400-size);
+  color: var(--gray-700);
+  font-family: var(--body-regular-400);
+}
+@media screen and (max-width: 450px) {
+  .addressCard {
+    flex-wrap: wrap;
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

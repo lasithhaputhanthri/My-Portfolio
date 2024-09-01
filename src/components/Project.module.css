@@ -1,0 +1,79 @@
+.whatsappImage20240401At0 {
+  width: 424px;
+  position: relative;
+  border-radius: var(--br-5xs) var(--br-5xs) 0 0;
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+.uiUxDesign {
+  width: 84px;
+  position: relative;
+  line-height: 16px;
+  font-weight: 500;
+}
+.productAdminDashboard {
+  position: relative;
+  font-size: var(--body-large-600-size);
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+.featuredProjectNameContaine {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.vivamusEleifendConvallis {
+  width: 360px;
+  position: relative;
+  font-size: var(--body-small-400-size);
+  line-height: 20px;
+  color: var(--gray-600);
+  white-space: pre-wrap;
+  display: inline-block;
+  max-width: 100%;
+}
+.featuredProjectContent {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.featuredProjectContent,
+.featuredProjectDetails,
+.project {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.featuredProjectDetails {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.project {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  background-color: var(--gray-white);
+  border: 1px solid var(--gray-100);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 var(--padding-11xl);
+  gap: var(--gap-13xl);
+  min-width: 286px;
+  text-align: left;
+  font-size: var(--body-thin-500-size);
+  color: var(--gray-400);
+  font-family: var(--body-regular-400);
+}
+@media screen and (max-width: 450px) {
+  .project {
+    gap: var(--gap-base);
+  }
+}
