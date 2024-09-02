@@ -23,23 +23,23 @@ const FrameComponent2: FunctionComponent<FrameComponent2Type> = ({
           propColor="#132238"
         />
         <div className={styles.navigation}>
-          <div className={styles.navLinks}>
+          <button className={styles.navLinks}>
             <a className={styles.home}>Home</a>
-          </div>
-          <div className={styles.navLinks1}>
+          </button>
+          <button className={styles.navLinks1}>
             <a className={styles.awards}>Awards</a>
-          </div>
-          <div className={styles.achievementsLink}>
+          </button>
+          <button className={styles.achievementsLink}>
             <div className={styles.projectsWrapper}>
               <a className={styles.projects}>Projects</a>
             </div>
-          </div>
-          <div className={styles.navbarItems}>
+          </button>
+          <button className={styles.navbarItems}>
             <a className={styles.tools}>Tools</a>
-          </div>
-          <div className={styles.navLinks2}>
+          </button>          
+          <button className={styles.navLinks2}>
             <a className={styles.myInterests}>My Interests</a>
-          </div>
+          </button>          
           <button className={styles.button}>
             <a className={styles.button1}>Contact</a>
           </button>
