@@ -1,0 +1,211 @@
+/* Increase the hover up effect and smoothness */
+.projectCard1 .Project:hover,
+.projectCard2 .Project:hover,
+.button:hover {
+  transform: translateY(-10px); /* Increase this value to move up more */
+  transition: transform 0.4s ease-in-out; /* Adjust duration and easing */
+}
+
+/* Ensure all elements have a smooth initial state */
+.projectCard1 .Project,
+.projectCard2 .Project,
+.button {
+  transition: transform 0.4s ease-in-out; /* Consistent smooth transition */
+}
+
+/* Hover state for buttons */
+.button:hover {
+  background-color: var(--color-darkorchid-100);
+  transform: translateY(-8px); /* Increase hover-up distance for buttons */
+  transition: transform 0.4s ease-in-out, background-color 0.3s ease-in-out;
+}
+.button {
+  cursor: pointer;
+  border: none;
+  padding: var(--padding-xs) var(--padding-5xl);
+  background-color: var(--primary-500);
+  border-radius: var(--br-9xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  white-space: nowrap;
+  z-index: 2;
+}
+.button1 {
+  position: relative;
+  font-size: var(--body-regular-400-size);
+  line-height: 24px;
+  font-weight: 600;
+  font-family: var(--body-regular-400);
+  color: var(--gray-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 93px;
+}
+.button2,
+.heroActions {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.button2 {
+  cursor: pointer;
+  border: none;
+  padding: var(--padding-3xs) var(--padding-4xl);
+  background-color:"transparent";
+  border-radius: var(--br-9xs);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+  white-space: nowrap;
+  z-index: 2;
+}
+.button2:hover {
+  background-color: var(--color-gainsboro-100);
+  border: 1px solid var(--color-darkorchid-100);
+  box-sizing: border-box;
+}
+.projects {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 56px;
+  font-weight: 600;
+  font-family: inherit;
+}
+.projectsIntro {
+  width: 1920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-17xl) var(--padding-xl);
+  box-sizing: border-box;
+  min-height: 128px;
+  max-width: 100%;
+}
+.projectCard1,
+.projectCard2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: var(--gap-5xl);
+  max-width: 100%;
+}
+.projectCard1 {
+  width: 1320px;
+  padding: 0 0 var(--padding-5xs);
+  box-sizing: border-box;
+}
+.projectCard2 {
+  width: 1336px;
+}
+.portfolio1,
+.projectCard {
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.projectCard {
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  font-size: var(--body-thin-500-size);
+  color: var(--gray-400);
+}
+.portfolio1 {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-51xl);
+}
+.button1 {
+  position: relative;
+  font-size: var(--body-regular-400-size);
+  line-height: 24px;
+  font-weight: 600;
+  font-family: var(--body-regular-400);
+  color: var(--gray-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 101px;
+}
+.button,
+.portfolio {
+  display: flex;
+  align-items: center;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-5xl);
+  background-color: var(--primary-500);
+  border-radius: var(--br-9xs);
+  flex-direction: row;
+  justify-content: center;
+  white-space: nowrap;
+}
+.button:hover {
+  background-color: var(--color-darkorchid-100);
+}
+.portfolio {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--padding-81xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-31xl);
+  max-width: 101%;
+  flex-shrink: 0;
+  z-index: 3;
+  text-align: left;
+  font-size: var(--heading-01-size);
+  color: var(--gray-900);
+  font-family: var(--body-regular-400);
+}
+@media screen and (max-width: 1225px) {
+  .portfolio1 {
+    gap: var(--gap-16xl);
+  }
+  .portfolio {
+    padding-top: var(--padding-46xl);
+    padding-bottom: var(--padding-46xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 850px) {
+  .projects {
+    font-size: var(--heading-02-size);
+    line-height: 45px;
+  }
+  .portfolio1 {
+    gap: var(--gap-mid);
+  }
+  .portfolio {
+    gap: var(--gap-6xl);
+    padding-top: var(--padding-23xl);
+    padding-bottom: var(--padding-23xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .projects {
+    font-size: var(--font-size-10xl);
+    line-height: 34px;
+  }
+  .button {
+    width: calc(100% - 40px);
+  }
+  .portfolio {
+    padding-top: var(--padding-8xl);
+    padding-bottom: var(--padding-8xl);
+    box-sizing: border-box;
+  }
+}

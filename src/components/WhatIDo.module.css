@@ -6,11 +6,13 @@
   font-weight: 600;
   font-family: inherit;
 }
+
 .myWorkSpans {
   align-self: stretch;
   position: relative;
   line-height: 24px;
 }
+
 .myWorkSpansAcrossPcbDesigWrapper {
   align-self: stretch;
   display: flex;
@@ -20,10 +22,12 @@
   font-size: var(--body-large-600-size);
   color: var(--gray-400);
 }
+
 .workProcess {
   align-self: stretch;
   gap: var(--gap-5xl);
 }
+
 .servicesDescription,
 .servicesDescriptionContainer,
 .workProcess {
@@ -32,9 +36,11 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .servicesDescriptionContainer {
   align-self: stretch;
 }
+
 .servicesDescription {
   width: 529px;
   padding: var(--padding-281xl) 0 0;
@@ -42,6 +48,7 @@
   min-width: 529px;
   max-width: 100%;
 }
+
 .loremIpsumDolor,
 .userExperienceUx {
   width: 584px;
@@ -49,6 +56,7 @@
   display: inline-block;
   max-width: 100%;
 }
+
 .userExperienceUx {
   margin: 0;
   font-size: inherit;
@@ -56,12 +64,14 @@
   font-weight: 600;
   font-family: inherit;
 }
+
 .loremIpsumDolor {
   font-size: var(--body-regular-400-size);
   line-height: 24px;
   font-family: var(--font-poppins);
   color: var(--gray-700);
 }
+
 .serviceImage {
   width: 5px;
   height: 100%;
@@ -72,6 +82,7 @@
   left: 0;
   background-color: var(--primary-500);
 }
+
 .whatIDoCard {
   align-self: stretch;
   box-shadow: 0 32px 96px rgba(28, 25, 25, 0.16);
@@ -84,7 +95,14 @@
   box-sizing: border-box;
   position: relative;
   gap: var(--gap-base);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
+.whatIDoCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
 .whatIDo,
 .whatIDoCard,
 .whatIDoCards {
@@ -93,6 +111,7 @@
   justify-content: flex-start;
   max-width: 100%;
 }
+
 .whatIDoCards {
   flex: 1;
   flex-direction: column;
@@ -100,7 +119,9 @@
   min-width: 421px;
   font-size: var(--heading-04-size);
   color: var(--gray-900);
+  transition: transform 0.3s ease-in-out;
 }
+
 .whatIDo {
   align-self: stretch;
   background-color: var(--gray-50);
@@ -114,6 +135,7 @@
   color: var(--color-darkslategray-100);
   font-family: var(--body-regular-400);
 }
+
 @media screen and (max-width: 1525px) {
   .servicesDescription {
     flex: 1;
@@ -122,6 +144,7 @@
     flex-wrap: wrap;
   }
 }
+
 @media screen and (max-width: 1225px) {
   .servicesDescription,
   .whatIDoCards {
@@ -133,6 +156,7 @@
     box-sizing: border-box;
   }
 }
+
 @media screen and (max-width: 850px) {
   .whatIDo1 {
     font-size: var(--heading-02-size);
@@ -151,6 +175,7 @@
     box-sizing: border-box;
   }
 }
+
 @media screen and (max-width: 450px) {
   .whatIDo1 {
     font-size: var(--font-size-10xl);

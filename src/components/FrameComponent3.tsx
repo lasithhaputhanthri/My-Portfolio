@@ -1,4 +1,5 @@
-import { FunctionComponent } from "react";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 import AddressCard from "./AddressCard";
 import Button from "./Button";
 import styles from "./FrameComponent3.module.css";
@@ -7,9 +8,33 @@ export type FrameComponent3Type = {
   className?: string;
 };
 
-const FrameComponent3: FunctionComponent<FrameComponent3Type> = ({
+const FrameComponent3: React.FC<FrameComponent3Type> = ({
   className = "",
 }) => {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "5xrjtdq",    // Your EmailJS service ID
+        "yjb7p3r",   // Your EmailJS template ID
+        form.current!,
+        "IWfuOGj5JdGc6sXjy"        // Replace this with your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Email sent successfully!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("An error occurred, please try again.");
+        }
+      );
+  };
+
   return (
     <div className={[styles.contactWrapper, className].join(" ")}>
       <div className={styles.contact}>
@@ -37,41 +62,52 @@ const FrameComponent3: FunctionComponent<FrameComponent3Type> = ({
             />
           </div>
           <div className={styles.socialMedia}>
-            <img
-              className={styles.image15Icon}
-              loading="lazy"
-              alt=""
-              src="/image-15@2x.png"
-            />
-            <div className={styles.socialMediaCard}>
+            <a href="mailto:lasithnawanjana123@gmail.com" target="_blank" rel="noopener noreferrer">
               <img
-                className={styles.socialIcon}
+                className={styles.image15Icon}
                 loading="lazy"
                 alt=""
-                src="/social.svg"
+                src="/image-15@2x.png"
               />
-            </div>
-            <div className={styles.socialMediaCard1}>
-              <img className={styles.socialIcon1} alt="" src="/social-1.svg" />
-            </div>
-            <div className={styles.socialMediaCard1}>
-              <img className={styles.socialIcon1} alt="" src="/social-2.svg" />
-            </div>
-            <img
-              className={styles.image17Icon}
-              loading="lazy"
-              alt=""
-              src="/image-17@2x.png"
-            />
+            </a>
+            <a href="https://web.facebook.com/people/Lasith-Haputhanthri/pfbid02uBjtG1JRgk59SFYwnEUXwyYvz1ZBt7fgFXmadJZVbQpPFEZzUmFHwSurrssL9Pffl/" target="_blank" rel="noopener noreferrer">
+              <div className={styles.socialMediaCard}>
+                <img
+                  className={styles.socialIcon}
+                  loading="lazy"
+                  alt=""
+                  src="/social.svg"
+                />
+              </div>
+            </a>
+            <a href="https://www.instagram.com/lasithhaputhanthri/?igsh=MWd4YTVsdjNvY3U3OA%3D%3D" target="_blank" rel="noopener noreferrer">
+              <div className={styles.socialMediaCard1}>
+                <img className={styles.socialIcon1} alt="" src="/social-1.svg" />
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/lasith-haputhanthri-b2919a265/" target="_blank" rel="noopener noreferrer">
+              <div className={styles.socialMediaCard1}>
+                <img className={styles.socialIcon1} alt="" src="/social-2.svg" />
+              </div>
+            </a>
+            <a href="https://github.com/lasithhaputhanthri" target="_blank" rel="noopener noreferrer">
+              <img
+                className={styles.image17Icon}
+                loading="lazy"
+                alt=""
+                src="/image-17@2x.png"
+              />
+            </a>
           </div>
         </div>
         <div className={styles.userInfromation}>
-          <form className={styles.userInformation}>
+          <form ref={form} onSubmit={sendEmail} className={styles.userInformation}>
             <div className={styles.information}>
               <div className={styles.name}>
                 <input
                   className={styles.name1}
                   placeholder="Name*"
+                  name="user_name"
                   type="text"
                 />
                 <div className={styles.nameChild} />
@@ -80,6 +116,7 @@ const FrameComponent3: FunctionComponent<FrameComponent3Type> = ({
                 <input
                   className={styles.email1}
                   placeholder="Email*"
+                  name="user_email"
                   type="text"
                 />
                 <div className={styles.emailChild} />
@@ -88,6 +125,7 @@ const FrameComponent3: FunctionComponent<FrameComponent3Type> = ({
                 <input
                   className={styles.location1}
                   placeholder="Location"
+                  name="user_location"
                   type="text"
                 />
                 <div className={styles.emailChild} />
@@ -102,6 +140,7 @@ const FrameComponent3: FunctionComponent<FrameComponent3Type> = ({
                 <input
                   className={styles.message1}
                   placeholder="Message*"
+                  name="message"
                   type="text"
                 />
                 <div className={styles.emailChild} />

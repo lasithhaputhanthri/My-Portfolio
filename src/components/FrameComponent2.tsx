@@ -23,25 +23,15 @@ const FrameComponent2: FunctionComponent<FrameComponent2Type> = ({
           propColor="#132238"
         />
         <div className={styles.navigation}>
-          <button className={styles.navLinks}>
-            <a className={styles.home}>Home</a>
-          </button>
-          <button className={styles.navLinks1}>
-            <a className={styles.awards}>Awards</a>
-          </button>
-          <button className={styles.achievementsLink}>
-            <div className={styles.projectsWrapper}>
-              <a className={styles.projects}>Projects</a>
-            </div>
-          </button>
-          <button className={styles.navbarItems}>
-            <a className={styles.tools}>Tools</a>
-          </button>          
-          <button className={styles.navLinks2}>
-            <a className={styles.myInterests}>My Interests</a>
-          </button>          
-          <button className={styles.button}>
-            <a className={styles.button1}>Contact</a>
+          
+
+          <a href="#frameComponent1" className={styles.navLinks}>Home</a>
+          <a href="#Archevements" className={styles.navLinks}>Awards</a>
+          <a href="#Portfolio" className={styles.navLinks}>Projects</a>
+          <a href="#WorkProcessCard" className={styles.navLinks}>Tools</a>       
+          <a href="#WhatIDo" className={styles.navLinks}>My Interests</a> 
+          <button className={styles.button}>      
+          <a href="#FrameComponent3" className={styles.button1}>Contact</a>
           </button>
         </div>
       </header>

@@ -10,9 +10,9 @@ const Archevements: FunctionComponent<ArchevementsType> = ({
   className = "",
 }) => {
   return (
-    <div className={[styles.archevements, className].join(" ")}>
-      <div className={styles.portfolio}>
-        <div className={styles.awardsIntro}>
+    <div className={[styles.portfolio, className].join(" ")}>
+      <div className={styles.portfolio1}>
+        <div className={styles.projectsIntro}>
           <h1 className={styles.awards}>Awards</h1>
         </div>
         <div className={styles.projectCard}>
@@ -39,7 +39,7 @@ const Archevements: FunctionComponent<ArchevementsType> = ({
               propWidth3="unset"
               propHeight2="unset"
               propMinWidth1="66px"
-              productAdminDashboard="SLIOT Challenge 2024"
+              productAdminDashboard="SLIOT Challenge 2024: Champion"
               propDisplay="unset"
               propMinWidth2="unset"
               vivamusEleifendConvallisAnte="HydroLink 2.0: An IoT device that can turn any domestic water tanks into smart ones."
@@ -52,6 +52,7 @@ const Archevements: FunctionComponent<ArchevementsType> = ({
               propDisplay2="inline-block"
               propMinWidth3="74px"
               propColor="#a53dff"
+              linkaddress="https://www.linkedin.com/feed/update/urn:li:activity:7225137830237192192/"
             />
             <Project
               propMinWidth="unset"
@@ -75,7 +76,7 @@ const Archevements: FunctionComponent<ArchevementsType> = ({
               propWidth3="unset"
               propHeight2="unset"
               propMinWidth1="66px"
-              productAdminDashboard="IEEE Challenge Sphere Arduino Challenge"
+              productAdminDashboard="IEEE Challenge Sphere Arduino Challenge: Champion"
               propDisplay="unset"
               propMinWidth2="unset"
               vivamusEleifendConvallisAnte="REPLACE: A smart and Intelligent that is designed with custom-made analog sensors and Made to be  scalable and anomaly detection."
@@ -88,6 +89,7 @@ const Archevements: FunctionComponent<ArchevementsType> = ({
               propDisplay2="inline-block"
               propMinWidth3="74px"
               propColor="#a53dff"
+              linkaddress="https://www.linkedin.com/feed/update/urn:li:activity:7225920776984571904/"
             />
             <Project
               propMinWidth="unset"
@@ -111,7 +113,7 @@ const Archevements: FunctionComponent<ArchevementsType> = ({
               propWidth3="unset"
               propHeight2="unset"
               propMinWidth1="89px"
-              productAdminDashboard="Brainstorm 2024"
+              productAdminDashboard="Brainstorm Biomedical Competition 2024: 1st Runners up"
               propDisplay="unset"
               propMinWidth2="unset"
               vivamusEleifendConvallisAnte=" StearSafe: A spectacle frame and watch that can use the EOG signals from the user to measure drowsiness  and alert the user."
@@ -124,6 +126,7 @@ const Archevements: FunctionComponent<ArchevementsType> = ({
               propDisplay2="inline-block"
               propMinWidth3="74px"
               propColor="#a53dff"
+              
             />
           </div>
         </div>

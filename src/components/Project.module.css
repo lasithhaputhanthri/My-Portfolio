@@ -1,3 +1,49 @@
+.button {
+  cursor: pointer;
+  border: none;
+  padding: var(--padding-xs) var(--padding-5xl);
+  background-color: var(--primary-500);
+  border-radius: var(--br-9xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  white-space: nowrap;
+  z-index: 2;
+}
+.button1 {
+  position: relative;
+  font-size: var(--body-regular-400-size);
+  line-height: 24px;
+  font-weight: 600;
+  font-family: var(--body-regular-400);
+  color: var(--gray-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 93px;
+}
+.button2,
+.heroActions {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.button2 {
+  cursor: pointer;
+  border: none;
+  padding: var(--padding-3xs) var(--padding-4xl);
+  background-color:"transparent";
+  border-radius: var(--br-9xs);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+  white-space: nowrap;
+  z-index: 2;
+}
+.button2:hover {
+  background-color: var(--color-gainsboro-100);
+  border: 1px solid var(--color-darkorchid-100);
+  box-sizing: border-box;
+}
 .whatsappImage20240401At0 {
   width: 424px;
   position: relative;

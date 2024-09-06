@@ -11,6 +11,7 @@
   line-height: 24px;
   display: inline-block;
   min-width: 46px;
+  color: white
 }
 .linkItems {
   display: flex;
@@ -28,6 +29,7 @@
   line-height: 24px;
   display: inline-block;
   min-width: 58px;
+  color: white
 }
 .contact,
 .myInterests,

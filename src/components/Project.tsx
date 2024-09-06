@@ -1,5 +1,4 @@
 import { FunctionComponent, useMemo, type CSSProperties } from "react";
-import Button from "./Button";
 import styles from "./Project.module.css";
 
 export type ProjectType = {
@@ -15,6 +14,8 @@ export type ProjectType = {
   propDisplay2?: string;
   propMinWidth3?: string;
   propColor?: string;
+  linkaddress?: string;
+  target?: string;
 
   /** Style props */
   propMinWidth?: CSSProperties["minWidth"];
@@ -40,6 +41,7 @@ export type ProjectType = {
   propWidth4?: CSSProperties["width"];
   propDisplay1?: CSSProperties["display"];
   propAlignSelf3?: CSSProperties["alignSelf"];
+  onClick?: () => void; // Add onClick property
 };
 
 const Project: FunctionComponent<ProjectType> = ({
@@ -78,6 +80,9 @@ const Project: FunctionComponent<ProjectType> = ({
   propDisplay2,
   propMinWidth3,
   propColor,
+  linkaddress,
+  target = "_blank",
+  onClick // Destructure onClick
 }) => {
   const projectStyle: CSSProperties = useMemo(() => {
     return {
@@ -88,14 +93,7 @@ const Project: FunctionComponent<ProjectType> = ({
       width: propWidth,
       padding: propPadding,
     };
-  }, [
-    propMinWidth,
-    propHeight,
-    propBoxShadow,
-    propFlex,
-    propWidth,
-    propPadding,
-  ]);
+  }, [propMinWidth, propHeight, propBoxShadow, propFlex, propWidth, propPadding]);
 
   const whatsAppImage20240401At0Style: CSSProperties = useMemo(() => {
     return {
@@ -145,7 +143,7 @@ const Project: FunctionComponent<ProjectType> = ({
   }, [propWidth4, propDisplay1, propAlignSelf3]);
 
   return (
-    <div className={[styles.project, className].join(" ")} style={projectStyle}>
+    <div className={[styles.project, className].join(" ")} style={projectStyle} onClick={onClick}>
       <img
         className={styles.whatsappImage20240401At0}
         loading="lazy"
@@ -181,14 +179,14 @@ const Project: FunctionComponent<ProjectType> = ({
             {vivamusEleifendConvallisAnte}
           </div>
         </div>
-        <Button
-          propBorder={propBorder}
-          propBackgroundColor={propBackgroundColor}
-          letsWorkTogether={letsWorkTogether}
-          propDisplay={propDisplay2}
-          propMinWidth={propMinWidth3}
-          propColor={propColor}
-        />
+        <a 
+          href={linkaddress} 
+          className={styles.button2}
+          target={target}
+          rel={target === "_blank" ? "noopener noreferrer" : undefined}
+        >
+          <div className={styles.button2}>See more</div>
+        </a>
       </div>
     </div>
   );

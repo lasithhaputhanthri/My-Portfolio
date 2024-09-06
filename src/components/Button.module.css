@@ -1,14 +1,11 @@
 .letsWorkTogether {
-  position: relative;
-  font-size: var(--body-regular-400-size);
-  line-height: 24px;
-  font-weight: 600;
-  font-family: var(--body-regular-400);
-  color: var(--gray-white);
-  text-align: left;
-  display: inline-block;
-  min-width: 57px;
+  cursor: pointer; /* Ensures the link is clickable */
+  color: inherit; /* Inherits the color from the component props */
+  text-decoration: none; /* Removes any default link underlines */
 }
+
+/* Additional CSS */
+
 .userInterfacePaperPlane {
   height: 24px;
   width: 24px;

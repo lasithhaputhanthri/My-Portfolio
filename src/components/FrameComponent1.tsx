@@ -13,12 +13,13 @@ const FrameComponent1: FunctionComponent<FrameComponent1Type> = ({
       <div className={styles.heroContent}>
         <div className={styles.heroInfo}>
           <div className={styles.introduction}>
-            <div className={styles.introduction}>
-              <h1 className={styles.helloImLasithContainer}>
-                <p className={styles.helloIm}>Hello, I’m</p>
-                <p className={styles.helloIm}>Lasith Haputhanthri</p>
-              </h1>
-            </div>
+          <div className={styles.introduction}>
+            <h1 className={styles.helloImLasithContainer}>
+              <span className={styles.typewriterOne}>Hello, I’m </span>
+              <span className={styles.typewriterTwo}>Lasith Haputhanthri</span>
+            </h1>
+          </div>
+
           </div>
           <div className={styles.passionateEngineeringStudent}>
             Passionate engineering student with a strong foundation in
@@ -26,19 +27,29 @@ const FrameComponent1: FunctionComponent<FrameComponent1Type> = ({
             innovative solutions. Eager to apply my skills and contribute to
             impactful projects in a dynamic environment.
           </div>
+          <img
+          className={styles.unsplashwkokidnt14wIcon}
+          loading="lazy"
+          alt=""
+          src="/unsplashwkokidnt14w@2x.png"
+        />
         </div>
         <div className={styles.heroActions}>
-          <button className={styles.button}>
+          <a href="#Portfolio" className={styles.button}>
             <div className={styles.button1}>My Projects</div>
-          </button>
+          </a>
+          <a 
+              href="/My_CV.pdf" // Update with the path to your document
+              download="My_CV.pdf">
           <button className={styles.button2}>
             <img
-              className={styles.arrowsDownload}
+              className={styles.button2}
               alt=""
               src="/arrows--download.svg"
             />
-            <div className={styles.button3}>Download CV</div>
+            <div className={styles.button2}>Download CV</div>
           </button>
+          </a>
         </div>
       </div>
     </div>

@@ -1,3 +1,20 @@
+a {
+  color: inherit; /* This will make the link color the same as the surrounding text */
+  text-decoration: none; /* This removes the underline */
+}
+
+/* If you want to apply a specific color, you can do so like this: */
+a {
+  color: #000; /* Replace #000 with your desired color code */
+  text-decoration: none; /* This removes the underline */
+}
+
+/* If you want to change the hover state as well, you can add: */
+a:hover {
+  color: #000; /* Or any color you prefer for the hover state */
+  text-decoration: none; /* Keep the underline removed on hover */
+}
+
 .home {
   text-decoration: none;
   position: relative;
@@ -12,7 +29,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-xs) var(--padding-sm);
+  padding: var(--padding-xs) var(--padding-xl);
 }
 .awards {
   text-decoration: none;
@@ -28,7 +45,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-xs) var(--padding-3xs);
+  padding: var(--padding-xs) var(--padding-xs);
 }
 .projects {
   text-decoration: none;
