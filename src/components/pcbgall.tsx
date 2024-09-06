@@ -12,58 +12,59 @@ const Pcbgall: FunctionComponent<PortfolioType> = ({ className = "" }) => {
   const projects = [
     {
       unsplashSavQfLRm4Do: "/photo_6244475496393982855_y.jpg",
-      productAdminDashboard: "Analog Function Generator",
+      productAdminDashboard: "StearSafe Spectacles PCB",
       vivamusEleifendConvallisAnte:
-        "An analog function generator that generates sinusoidal, triangular, sawtooth, and PWM signals up to 20kHz with variable parameters. We designed it using analog components, which feature versatile waveform options, and easy signal output.",
+        "SteerSafe PCB is a 6-layer, mixed-signal design featuring an onboard inverted-F antenna optimized for 2.4GHz with impedance matching, ensuring efficient signal transmission and power efficiency in wireless communication.",
       linkaddress: "https://github.com/OhmFusion/Analog-Function-Generator",
     },
     {
-      unsplashSavQfLRm4Do: "/photo_6244475496393982856_y.jpg",
-      productAdminDashboard: "HydroLink 2.0",
+      unsplashSavQfLRm4Do: "/photo_6244475496393982859_y.jpg",
+      productAdminDashboard: "StearSafe Wristband PCB",
       vivamusEleifendConvallisAnte:
-        "An IoT device plugged into any domestic water tank checks the water level and sends it to Firebase. The water level can be monitored with a custom-made app, and the user can control the water level from the app.",
+        "SteerSafe Wristband PCB is a compact 4-layer design with impedance matching and an onboard inverted-F antenna optimized for 2.4GHz, ensuring efficient wireless communication in wearable applications.",
       linkaddress: "https://hydrolink.lk/",
     },
     {
       unsplashSavQfLRm4Do: "/photo_6244475496393982859_y.jpg",
-      productAdminDashboard: "IoT Medicine Storage Box",
+      productAdminDashboard: "LUNA Resturent Robot PCB",
       vivamusEleifendConvallisAnte:
-        "A medicine storage box that provides medicine time alerts, keeps the medicine in proper sunlight and monitors the temperature and humidity.",
+        "LUNA PCB is a compact 2-layer board for restaurant robot control, utilizing the ATmega2560 microcontroller. It supports both UART and I2C communication, ensuring efficient and versatile data handling for seamless automation.",
       linkaddress: "https://github.com/lasithhaputhanthri/Medi-Box",
     },
     {
       unsplashSavQfLRm4Do: "/photo_6244475496393982860_x.jpg",
-      productAdminDashboard: "REPLACE: A Smart and Intelligent Wall Socket",
+      productAdminDashboard: "REPLACE: A Smart and Intelligent Wall Socket PCB",
       vivamusEleifendConvallisAnte:
-        "A smart wall socket that can detect anomalies in the domestic power grid. With a mobile app, the user can monitor power consumption and cost, and control the socket.",
+        "REPLACE PCB is a 2-layer design for a smart wall socket, handling high voltage and current. It incorporates analog circuits for accurate voltage and current sensing, ensuring safe and efficient energy management.",
       linkaddress: "https://github.com/AuraLabs-main/AuraLabs-Replace-working",
     },
     {
-      unsplashSavQfLRm4Do: "/photo_6244475496393982861_x.jpg",
-      productAdminDashboard: "StearSafe",
+      unsplashSavQfLRm4Do: "/photo_6244475496393982863_x.jpg",
+      productAdminDashboard: "Ratatouille Maze solving Robot",
       vivamusEleifendConvallisAnte:
-        "A spectacle frame and smartwatch that collect EOG data, measure the drowsiness of the user, and give alerts.",
+        "Ratatouille Maze Solving Robot PCB is a compact 2-layer design optimized for controlling a maze-solving robot, providing efficient performance and streamlined routing for robotic automation tasks.",
+      linkaddress: "",
+    },
+    {
+      unsplashSavQfLRm4Do: "/photo_6244475496393982861_x.jpg",
+      productAdminDashboard: "HydroLink 1.0 PCB",
+      vivamusEleifendConvallisAnte:
+        "HydroLink 1.0 PCB is a 2-layer design featuring the ESP8266 module. As your first PCB project, it provides efficient wireless communication for IoT applications, enabling remote water level monitoring.",
       linkaddress: "https://github.com/PulseX-Solutions/Stear_Safe",
     },
     {
       unsplashSavQfLRm4Do: "/photo_6244475496393982862_x.jpg",
-      productAdminDashboard: "LUNA: Vision-based Automated Restaurant Robot",
+      productAdminDashboard: "Hydrolink 2.0",
       vivamusEleifendConvallisAnte:
-        "Developing a restaurant robot using ROS and Kinect2, equipped with a Kalman-filter-based food stabilization tray to avoid beverage spillage. The robot enhances efficiency in restaurant environments with advanced sensor technologies and robotic functionalities, including a custom restaurant environment planner front-end.",
+        "HydroLink 2.0 PCB is a compact 2-layer design with enhanced power management and thermal dissipation. It focuses on low power consumption, ensuring efficient and reliable performance for IoT water monitoring systems.",
       linkaddress: "",
     },
-    {
-        unsplashSavQfLRm4Do: "/photo_6244475496393982863_x.jpg",
-        productAdminDashboard: "LUNA: Vision-based Automated Restaurant Robot",
-        vivamusEleifendConvallisAnte:
-          "Developing a restaurant robot using ROS and Kinect2, equipped with a Kalman-filter-based food stabilization tray to avoid beverage spillage. The robot enhances efficiency in restaurant environments with advanced sensor technologies and robotic functionalities, including a custom restaurant environment planner front-end.",
-        linkaddress: "",
-      },
+
       {
         unsplashSavQfLRm4Do: "/photo_6244475496393982864_x.jpg",
-        productAdminDashboard: "LUNA: Vision-based Automated Restaurant Robot",
+        productAdminDashboard: "Function Generator PCB",
         vivamusEleifendConvallisAnte:
-          "Developing a restaurant robot using ROS and Kinect2, equipped with a Kalman-filter-based food stabilization tray to avoid beverage spillage. The robot enhances efficiency in restaurant environments with advanced sensor technologies and robotic functionalities, including a custom restaurant environment planner front-end.",
+          "Analog Function Generator PCB is a compact 2-layer design for generating analog signals, including sine, square, and triangle waves. Its efficient layout is ideal for precise and space-saving electronic testing.",
         linkaddress: "",
       },
       {
