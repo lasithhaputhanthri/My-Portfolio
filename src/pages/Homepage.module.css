@@ -530,6 +530,7 @@ html {
   .doYouHaveContainer {
     font-size: var(--font-size-10xl);
     line-height: 34px;
+    box-sizing: border-box;
   }
   .heroContent {
     padding-bottom: var(--padding-xl);

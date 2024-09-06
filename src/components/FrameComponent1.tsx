@@ -31,7 +31,7 @@ const FrameComponent1: FunctionComponent<FrameComponent1Type> = ({
           className={styles.unsplashwkokidnt14wIcon}
           loading="lazy"
           alt=""
-          src="/WhatsApp Image 2024-09-05 at 18.41.25_0da31fd8.jpg"
+          src="/me.jpg"
         />
         </div>
         <div className={styles.heroActions}>

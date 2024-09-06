@@ -45,7 +45,8 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: var(--padding-xs);
+  padding: var(--padding-xl);
+  padding: left 5000px;
   width: auto; /* Adjust as necessary */
   gap: 20px; /* Increased spacing between items */
 }
