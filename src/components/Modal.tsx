@@ -1,19 +1,17 @@
-import React from "react";
-import styles from "./Modal.module.css";
+import { FunctionComponent } from "react";
+import styles from "./modal.module.css";
 
-interface ModalProps {
+type ModalProps = {
   imageUrl: string;
   onClose: () => void;
-}
+};
 
-const Modal: React.FC<ModalProps> = ({ imageUrl, onClose }) => {
+const Modal: FunctionComponent<ModalProps> = ({ imageUrl, onClose }) => {
   return (
     <div className={styles.modalOverlay} onClick={onClose}>
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-        <img src={imageUrl} alt="Full view" className={styles.modalImage} />
-        <button className={styles.closeButton} onClick={onClose}>
-          ×
-        </button>
+        <img src={imageUrl} alt="Full Screen" className={styles.modalImage} />
+        <button className={styles.closeButton} onClick={onClose}>Close</button>
       </div>
     </div>
   );

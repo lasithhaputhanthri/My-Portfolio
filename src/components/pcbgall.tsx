@@ -1,5 +1,6 @@
 import { FunctionComponent, useState } from "react";
 import Project from "./Project";
+import Modal from "./Modal";
 import styles from "./pcbgall.module.css";
 
 export type PortfolioType = {
@@ -7,84 +8,85 @@ export type PortfolioType = {
 };
 
 const Pcbgall: FunctionComponent<PortfolioType> = ({ className = "" }) => {
-  const [visibleProjects, setVisibleProjects] = useState(3); // Initially show 3 projects
+  const [visibleProjects, setVisibleProjects] = useState(3);
+  const [modalImage, setModalImage] = useState<string | null>(null);
 
   const projects = [
     {
-      unsplashSavQfLRm4Do: "/photo_6244475496393982855_y.jpg",
-      productAdminDashboard: "StearSafe Spectacles PCB",
+      unsplashSavQfLRm4Do: "/ST_specs.png",
+      productAdminDashboard: "SteerSafe Spectacles PCB",
       vivamusEleifendConvallisAnte:
         "SteerSafe PCB is a 6-layer, mixed-signal design featuring an onboard inverted-F antenna optimized for 2.4GHz with impedance matching, ensuring efficient signal transmission and power efficiency in wireless communication.",
-      linkaddress: "https://github.com/OhmFusion/Analog-Function-Generator",
+      
     },
     {
       unsplashSavQfLRm4Do: "/photo_6244475496393982859_y.jpg",
-      productAdminDashboard: "StearSafe Wristband PCB",
+      productAdminDashboard: "SteerSafe Wristband PCB",
       vivamusEleifendConvallisAnte:
         "SteerSafe Wristband PCB is a compact 4-layer design with impedance matching and an onboard inverted-F antenna optimized for 2.4GHz, ensuring efficient wireless communication in wearable applications.",
-      linkaddress: "https://hydrolink.lk/",
+      
     },
     {
-      unsplashSavQfLRm4Do: "/photo_6244475496393982859_y.jpg",
-      productAdminDashboard: "LUNA Resturent Robot PCB",
+      unsplashSavQfLRm4Do: "/Luna.png",
+      productAdminDashboard: "LUNA Restaurant Robot PCB",
       vivamusEleifendConvallisAnte:
         "LUNA PCB is a compact 2-layer board for restaurant robot control, utilizing the ATmega2560 microcontroller. It supports both UART and I2C communication, ensuring efficient and versatile data handling for seamless automation.",
-      linkaddress: "https://github.com/lasithhaputhanthri/Medi-Box",
+      
     },
     {
       unsplashSavQfLRm4Do: "/Annotation 2024-09-06 170740.png",
       productAdminDashboard: "REPLACE: A Smart and Intelligent Wall Socket PCB",
       vivamusEleifendConvallisAnte:
         "REPLACE PCB is a 2-layer design for a smart wall socket, handling high voltage and current. It incorporates analog circuits for accurate voltage and current sensing, ensuring safe and efficient energy management.",
-      linkaddress: "https://github.com/AuraLabs-main/AuraLabs-Replace-working",
+      
     },
     {
       unsplashSavQfLRm4Do: "/photo_6244475496393982863_x.jpg",
-      productAdminDashboard: "Ratatouille Maze solving Robot",
+      productAdminDashboard: "Ratatouille Maze Solving Robot PCB",
       vivamusEleifendConvallisAnte:
         "Ratatouille Maze Solving Robot PCB is a compact 2-layer design optimized for controlling a maze-solving robot, providing efficient performance and streamlined routing for robotic automation tasks.",
-      linkaddress: "",
+      
     },
     {
       unsplashSavQfLRm4Do: "/photo_6244475496393982861_x.jpg",
       productAdminDashboard: "HydroLink 1.0 PCB",
       vivamusEleifendConvallisAnte:
         "HydroLink 1.0 PCB is a 2-layer design featuring the ESP8266 module. As your first PCB project, it provides efficient wireless communication for IoT applications, enabling remote water level monitoring.",
-      linkaddress: "https://github.com/PulseX-Solutions/Stear_Safe",
+      
     },
     {
       unsplashSavQfLRm4Do: "/photo_6244475496393982859_y.jpg",
-      productAdminDashboard: "Hydrolink 2.0",
+      productAdminDashboard: "HydroLink 2.0 PCB",
       vivamusEleifendConvallisAnte:
         "HydroLink 2.0 PCB is a compact 2-layer design with enhanced power management and thermal dissipation. It focuses on low power consumption, ensuring efficient and reliable performance for IoT water monitoring systems.",
-      linkaddress: "",
+      
     },
-
-      {
-        unsplashSavQfLRm4Do: "/photo_6244475496393982864_x.jpg",
-        productAdminDashboard: "Function Generator PCB",
-        vivamusEleifendConvallisAnte:
-          "Analog Function Generator PCB is a compact 2-layer design for generating analog signals, including sine, square, and triangle waves. Its efficient layout is ideal for precise and space-saving electronic testing.",
-        linkaddress: "",
-      },
-      {
-        unsplashSavQfLRm4Do: "/photo_6244475496393982860_x.jpg",
-        productAdminDashboard: "Measurup PCB",
-        vivamusEleifendConvallisAnte:
-          "MeasureUp PCB is a 2-layer design for high-precision height sensing. It features a compact layout tailored for accurate measurement in various applications, ensuring reliable and consistent performance.",
-        linkaddress: "",
-      },
-      {
-        unsplashSavQfLRm4Do: "/photo_6244475496393982860_x.jpg",
-        productAdminDashboard: "Measurup PCB",
-        vivamusEleifendConvallisAnte:
-          "MeasureUp PCB is a 2-layer design for high-precision height sensing. It features a compact layout tailored for accurate measurement in various applications, ensuring reliable and consistent performance.",
-        linkaddress: "",
-      },
+    {
+      unsplashSavQfLRm4Do: "/FG.png",
+      productAdminDashboard: "Function Generator PCB",
+      vivamusEleifendConvallisAnte:
+        "Analog Function Generator PCB is a compact 2-layer design for generating analog signals, including sine, square, and triangle waves. Its efficient layout is ideal for precise and space-saving electronic testing.",
+      
+    },
+    {
+      unsplashSavQfLRm4Do: "/photo_6244475496393982860_x.jpg",
+      productAdminDashboard: "MeasureUp PCB",
+      vivamusEleifendConvallisAnte:
+        "MeasureUp PCB is a 2-layer design for high-precision height sensing. It features a compact layout tailored for accurate measurement in various applications, ensuring reliable and consistent performance.",
+      
+    },
   ];
 
   const handleSeeMore = () => {
-    setVisibleProjects((prevCount) => prevCount + 3); // Show 3 more projects each time
+    setVisibleProjects((prevCount) => prevCount + 3);
+  };
+
+  const openModal = (imageUrl: string) => {
+    setModalImage(imageUrl);
+  };
+
+  const closeModal = () => {
+    setModalImage(null);
   };
 
   return (
@@ -114,7 +116,7 @@ const Pcbgall: FunctionComponent<PortfolioType> = ({ className = "" }) => {
                 propWidth2="400px"
                 propPadding1="0px 20px"
                 propAlignSelf2="unset"
-                uIUXDESIGN="UI-UX DESIGN"
+                //uIUXDESIGN="UI-UX DESIGN"
                 uIUXDESIGN1={false}
                 propWidth3="84px"
                 propHeight2="unset"
@@ -132,7 +134,8 @@ const Pcbgall: FunctionComponent<PortfolioType> = ({ className = "" }) => {
                 propDisplay2="inline-block"
                 propMinWidth3="74px"
                 propColor="#a53dff"
-                linkaddress={project.linkaddress}
+                onClick={() => openModal(project.unsplashSavQfLRm4Do)}
+                
               />
             ))}
           </div>
@@ -142,6 +145,12 @@ const Pcbgall: FunctionComponent<PortfolioType> = ({ className = "" }) => {
         <a className={styles.button} onClick={handleSeeMore}>
           <div className={styles.button1}>More Projects</div>
         </a>
+      )}
+      {modalImage && (
+        <Modal
+          imageUrl={modalImage}
+          onClose={closeModal}
+        />
       )}
     </div>
   );
