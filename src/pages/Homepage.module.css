@@ -451,10 +451,11 @@ html {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0 0 1198px;
-  box-sizing: border-box;
+  align-items: flex-start; /* Align items to the start of the flex container */
+  justify-content: flex-start; /* Align items to the start of the flex container */
+  padding: 0; /* Reset padding */
+  margin: 0; /* Reset margin if needed */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
@@ -462,6 +463,7 @@ html {
   color: var(--color-black);
   font-family: var(--body-regular-400);
 }
+
 @media screen and (max-width: 1225px) {
   .workProcess {
     padding: 161px 41px var(--padding-72xl) var(--padding-131xl);

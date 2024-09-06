@@ -32,7 +32,7 @@ const Pcbgall: FunctionComponent<PortfolioType> = ({ className = "" }) => {
       linkaddress: "https://github.com/lasithhaputhanthri/Medi-Box",
     },
     {
-      unsplashSavQfLRm4Do: "/photo_6244475496393982860_x.jpg",
+      unsplashSavQfLRm4Do: "/Annotation 2024-09-06 170740.png",
       productAdminDashboard: "REPLACE: A Smart and Intelligent Wall Socket PCB",
       vivamusEleifendConvallisAnte:
         "REPLACE PCB is a 2-layer design for a smart wall socket, handling high voltage and current. It incorporates analog circuits for accurate voltage and current sensing, ensuring safe and efficient energy management.",
@@ -53,7 +53,7 @@ const Pcbgall: FunctionComponent<PortfolioType> = ({ className = "" }) => {
       linkaddress: "https://github.com/PulseX-Solutions/Stear_Safe",
     },
     {
-      unsplashSavQfLRm4Do: "/photo_6244475496393982862_x.jpg",
+      unsplashSavQfLRm4Do: "/photo_6244475496393982859_y.jpg",
       productAdminDashboard: "Hydrolink 2.0",
       vivamusEleifendConvallisAnte:
         "HydroLink 2.0 PCB is a compact 2-layer design with enhanced power management and thermal dissipation. It focuses on low power consumption, ensuring efficient and reliable performance for IoT water monitoring systems.",
@@ -68,10 +68,17 @@ const Pcbgall: FunctionComponent<PortfolioType> = ({ className = "" }) => {
         linkaddress: "",
       },
       {
-        unsplashSavQfLRm4Do: "/photo_6244475496393982869_y.jpg",
-        productAdminDashboard: "LUNA: Vision-based Automated Restaurant Robot",
+        unsplashSavQfLRm4Do: "/photo_6244475496393982860_x.jpg",
+        productAdminDashboard: "Measurup PCB",
         vivamusEleifendConvallisAnte:
-          "Developing a restaurant robot using ROS and Kinect2, equipped with a Kalman-filter-based food stabilization tray to avoid beverage spillage. The robot enhances efficiency in restaurant environments with advanced sensor technologies and robotic functionalities, including a custom restaurant environment planner front-end.",
+          "MeasureUp PCB is a 2-layer design for high-precision height sensing. It features a compact layout tailored for accurate measurement in various applications, ensuring reliable and consistent performance.",
+        linkaddress: "",
+      },
+      {
+        unsplashSavQfLRm4Do: "/photo_6244475496393982860_x.jpg",
+        productAdminDashboard: "Measurup PCB",
+        vivamusEleifendConvallisAnte:
+          "MeasureUp PCB is a 2-layer design for high-precision height sensing. It features a compact layout tailored for accurate measurement in various applications, ensuring reliable and consistent performance.",
         linkaddress: "",
       },
   ];
