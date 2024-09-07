@@ -57,6 +57,7 @@
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
+  
 }
 .socialMediaCard1 {
   border-radius: var(--br-9xs);
