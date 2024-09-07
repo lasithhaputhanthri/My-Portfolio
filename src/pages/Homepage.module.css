@@ -386,6 +386,7 @@ html {
   align-items: flex-start;
   justify-content: center;
   max-width: 100%;
+  margin-left: 625px;
 }
 .callToAction {
   background-color: var(--gray-900);
