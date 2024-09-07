@@ -162,17 +162,17 @@
   cursor: pointer;
   border: none;
   padding: var(--padding-3xs) var(--padding-4xl);
-  background-color: var(--gray-white);
-  border-radius: var(--br-9xs);
+  background-color: transparent;
+  border-radius: var(--br-5xs);
   display: flex;
   align-items: flex-start;
-  gap: var(--gap-xs);
+  gap: 1px;
   white-space: nowrap;
   z-index: 2;
 }
 .button2:hover {
   background-color: var(--color-gainsboro-100);
-  border: 1px solid var(--color-darkorchid-100);
+  border: none;
   box-sizing: border-box;
 }
 .heroActions {

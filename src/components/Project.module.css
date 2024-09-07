@@ -45,7 +45,7 @@
 
 .button2:hover {
   background-color: var(--color-gainsboro-100);
-  border: 1px solid var(--color-darkorchid-100);
+  border: none;
   box-sizing: border-box;
 }
 

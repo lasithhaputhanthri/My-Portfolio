@@ -185,7 +185,7 @@ const Project: FunctionComponent<ProjectType> = ({
           target={target}
           rel={target === "_blank" ? "noopener noreferrer" : undefined}
         >
-          <div className={styles.button2}>See more</div>
+          <button className={styles.button2}>See more</button>
         </a>
       </div>
     </div>

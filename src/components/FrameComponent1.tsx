@@ -44,7 +44,6 @@ const FrameComponent1: FunctionComponent<FrameComponent1Type> = ({
           <button className={styles.button2}>
             <img
               className={styles.button2}
-              alt=""
               src="/arrows--download.svg"
             />
             <div className={styles.button2}>Download CV</div>
