@@ -11,6 +11,7 @@
   white-space: nowrap;
   z-index: 2;
 }
+
 .button1 {
   position: relative;
   font-size: var(--body-regular-400-size);
@@ -22,16 +23,18 @@
   display: inline-block;
   min-width: 93px;
 }
+
 .button2,
 .heroActions {
   flex-direction: row;
   justify-content: flex-start;
 }
+
 .button2 {
   cursor: pointer;
   border: none;
   padding: var(--padding-3xs) var(--padding-4xl);
-  background-color:"transparent";
+  background-color: transparent;
   border-radius: var(--br-9xs);
   display: flex;
   align-items: flex-start;
@@ -39,11 +42,13 @@
   white-space: nowrap;
   z-index: 2;
 }
+
 .button2:hover {
   background-color: var(--color-gainsboro-100);
   border: 1px solid var(--color-darkorchid-100);
   box-sizing: border-box;
 }
+
 .whatsappImage20240401At0 {
   width: 424px;
   position: relative;
@@ -52,12 +57,14 @@
   object-fit: cover;
   max-width: 100%;
 }
+
 .uiUxDesign {
   width: 84px;
   position: relative;
   line-height: 16px;
   font-weight: 500;
 }
+
 .productAdminDashboard {
   position: relative;
   font-size: var(--body-large-600-size);
@@ -65,6 +72,7 @@
   font-weight: 600;
   color: var(--gray-900);
 }
+
 .featuredProjectNameContaine {
   align-self: stretch;
   display: flex;
@@ -73,6 +81,7 @@
   justify-content: flex-start;
   gap: var(--gap-9xs);
 }
+
 .vivamusEleifendConvallis {
   width: 360px;
   position: relative;
@@ -83,12 +92,14 @@
   display: inline-block;
   max-width: 100%;
 }
+
 .featuredProjectContent {
   align-self: stretch;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-xs);
 }
+
 .featuredProjectContent,
 .featuredProjectDetails,
 .project {
@@ -96,12 +107,14 @@
   flex-direction: column;
   max-width: 100%;
 }
+
 .featuredProjectDetails {
   align-self: stretch;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-xl);
 }
+
 .project {
   flex: 1;
   border-radius: var(--br-5xs);
@@ -117,7 +130,14 @@
   font-size: var(--body-thin-500-size);
   color: var(--gray-400);
   font-family: var(--body-regular-400);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
+
+.project:hover {
+  transform: translateY(-10px); /* Float effect by moving the element up */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);; /* Increased shadow effect */
+}
+
 @media screen and (max-width: 450px) {
   .project {
     gap: var(--gap-base);
