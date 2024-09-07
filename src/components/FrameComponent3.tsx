@@ -18,8 +18,8 @@ const FrameComponent3: React.FC<FrameComponent3Type> = ({
 
     emailjs
       .sendForm(
-        "5xrjtdq",    // Your EmailJS service ID
-        "yjb7p3r",   // Your EmailJS template ID
+        "service_5xrjtdq",    // Your EmailJS service ID
+        "template_yjb7p3r",   // Your EmailJS template ID
         form.current!,
         "IWfuOGj5JdGc6sXjy"        // Replace this with your EmailJS user ID
       )
