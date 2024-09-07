@@ -1,5 +1,5 @@
 .homepage {
-  padding-right: 10px; /* Adjust this value to reduce the left space */
+  padding-right: 10px; /* Adjust this value to reduce the right space */
   margin-left: -150px;
   margin-right: -100px;
   width: 110%;
@@ -17,8 +17,9 @@
   font-size: var(--heading-01-size);
   color: var(--color-black);
   font-family: var(--body-regular-400);
-  padding-top: 100px;
+  padding-top: 60px; /* Adjusted from 100px */
 }
+
 .footer,
 .footerContent,
 .siteLinks {
@@ -26,6 +27,7 @@
   flex-direction: row;
   max-width: 100%;
 }
+
 .button {
   cursor: pointer;
   border: none;
@@ -39,11 +41,13 @@
   white-space: nowrap;
   z-index: 2;
 }
+
 .button:hover {
   background-color: rgba(184, 4, 255, 0.886);
   border: none;
   box-sizing: border-box;
 }
+
 .button1 {
   position: relative;
   font-size: var(--body-regular-400-size);
@@ -55,43 +59,47 @@
   display: inline-block;
   min-width: 93px;
 }
+
 .button2,
 .heroActions {
   flex-direction: row;
   justify-content: flex-start;
 }
+
 .button2 {
   cursor: pointer;
   border: none;
   padding: var(--padding-3xs) var(--padding-4xl);
-  background-color: transparent; /* Removed quotes */
+  background-color: transparent;
   border-radius: var(--br-9xs);
   display: flex;
   align-items: flex-start;
   gap: var(--gap-xs);
   white-space: nowrap;
   z-index: 2;
-  color: white; /* This sets the text color to white */
+  color: white;
 }
+
 .button2:hover {
   background-color: transparent;
   border: none;
   box-sizing: border-box;
 }
+
 html {
   transform: scale(1);
   transform-origin: 0 0;
   width: 100%;
-  overflow-x: hidden; /* Added to prevent overflow */
-}
-html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 .houseIcon {
   height: 24px;
   width: 24px;
   position: relative;
 }
+
 .icon,
 .icon1 {
   background-color: var(--gray-white);
@@ -101,19 +109,23 @@ html {
   justify-content: flex-start;
   padding: var(--padding-base);
 }
+
 .icon {
   border-radius: var(--br-9xs);
   z-index: 0;
 }
+
 .icon1 {
   border-radius: 5px;
   z-index: 1;
 }
+
 .subheader,
 .tools {
   font-weight: 600;
   display: inline-block;
 }
+
 .subheader {
   width: 0;
   height: 0;
@@ -126,6 +138,7 @@ html {
   font-family: var(--font-poppins);
   z-index: 2;
 }
+
 .tools {
   margin: 0;
   width: 425px;
@@ -135,6 +148,7 @@ html {
   font-family: inherit;
   max-width: 100%;
 }
+
 .image2Icon {
   width: 70px;
   height: 63px;
@@ -142,6 +156,7 @@ html {
   bottom: 46px;
   object-fit: cover;
 }
+
 .edaTools,
 .image1Icon,
 .image2Icon {
@@ -149,6 +164,7 @@ html {
   margin: 0 !important;
   z-index: 1;
 }
+
 .edaTools {
   top: 23px;
   left: 26px;
@@ -157,6 +173,7 @@ html {
   display: inline-block;
   min-width: 97px;
 }
+
 .image1Icon {
   width: 122px;
   height: 76px;
@@ -164,6 +181,7 @@ html {
   left: 25px;
   object-fit: cover;
 }
+
 .workProcessCardParent {
   height: 192px;
   width: 320px;
@@ -174,6 +192,7 @@ html {
   position: relative;
   min-width: 320px;
 }
+
 .image3Icon,
 .image4Icon {
   position: absolute;
@@ -181,24 +200,28 @@ html {
   object-fit: cover;
   z-index: 1;
 }
+
 .image4Icon {
   width: 89px;
   height: 53px;
   right: 53px;
   bottom: 44px;
 }
+
 .image3Icon {
   width: 124px;
   height: 28px;
   bottom: 57px;
   left: 48px;
 }
+
 .processSteps,
 .workProcessCardGroup {
   display: flex;
   justify-content: flex-start;
   max-width: 100%;
 }
+
 .workProcessCardGroup {
   flex: 1;
   flex-direction: column;
@@ -206,12 +229,14 @@ html {
   position: relative;
   min-width: 224px;
 }
+
 .processSteps {
   align-self: stretch;
   flex-direction: row;
   align-items: flex-end;
   gap: 9px;
 }
+
 .image14Icon,
 .image9Icon {
   width: 65px;
@@ -223,18 +248,21 @@ html {
   object-fit: cover;
   z-index: 1;
 }
+
 .image9Icon {
   width: 89px;
   height: 29px;
   right: 106px;
   bottom: 113px;
 }
+
 .image8Icon {
   width: 66px;
   height: 45px;
   bottom: 97px;
   left: 35px;
 }
+
 .image5Icon,
 .image6Icon,
 .image7Icon,
@@ -244,12 +272,14 @@ html {
   object-fit: cover;
   z-index: 1;
 }
+
 .image7Icon {
   width: 75px;
   height: 70px;
   top: 73px;
   right: 41px;
 }
+
 .image5Icon,
 .image6Icon {
   width: 56px;
@@ -257,12 +287,14 @@ html {
   top: 75px;
   left: 125px;
 }
+
 .image5Icon {
   width: 75px;
   height: 76px;
   top: 73px;
   left: 26px;
 }
+
 .workProcessCardContainer {
   height: 324px;
   width: 320px;
@@ -273,11 +305,13 @@ html {
   position: relative;
   min-width: 320px;
 }
+
 .image13Icon,
 .image16Icon {
   margin: 0 !important;
   z-index: 1;
 }
+
 .image16Icon {
   width: 58px;
   height: 23px;
@@ -286,18 +320,21 @@ html {
   left: 118px;
   object-fit: cover;
 }
+
 .image13Icon {
   width: 36px;
   height: 44px;
   bottom: 113px;
   left: 39px;
 }
+
 .image11Icon,
 .image12Icon,
 .image13Icon {
   position: absolute;
   object-fit: cover;
 }
+
 .image12Icon {
   height: 100%;
   top: 0;
@@ -307,6 +344,7 @@ html {
   width: 150px;
   z-index: 1;
 }
+
 .image11Icon {
   top: 28px;
   left: 0;
@@ -314,17 +352,20 @@ html {
   height: 66px;
   z-index: 2;
 }
+
 .image10Icon,
 .image12Parent {
   position: absolute;
   margin: 0 !important;
 }
+
 .image12Parent {
   width: 209px;
   height: 121px;
   top: 44px;
   right: 28px;
 }
+
 .image10Icon {
   width: 46px;
   height: 51px;
@@ -333,6 +374,7 @@ html {
   object-fit: cover;
   z-index: 1;
 }
+
 .frameParent,
 .processContent,
 .workProcess {
@@ -341,82 +383,50 @@ html {
   justify-content: flex-start;
   max-width: 100%;
 }
+
 .frameParent {
   align-self: stretch;
   flex-direction: row;
   gap: 11px;
 }
+
 .processContent,
 .workProcess {
   flex-direction: column;
 }
+
 .processContent {
   align-self: stretch;
   gap: 26px;
   font-size: var(--heading-05-size);
   color: var(--color-black);
 }
+
 .workProcess {
   width: 1058px;
   background-color: var(--gray-50);
-  padding: 248px 83px var(--padding-121xl) var(--padding-281xl);
+  padding: 100px 50px; /* Adjusted padding values */
   box-sizing: border-box;
-  gap: 10px;
-  z-index: 2;
-  color: var(--gray-900);
 }
-.doYouHave {
-  margin: 0;
-}
-.doYouHaveContainer {
-  margin: 0;
-  position: relative;
-  font-size: inherit;
-  line-height: 56px;
-  font-weight: 600;
-  font-family: inherit;
-  display: inline-block;
-  max-width: 100%;
-}
-.workTogether {
-  width: 619px;
+
+.callToAction {
+  padding: var(--padding-6xl) var(--padding-xl);
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
-  max-width: 100%;
+  justify-content: flex-start;
+  gap: var(--gap-md);
 }
-.callToAction {
-  background-color: var(--gray-900);
-  align-items: center;
-  padding: var(--padding-121xl) var(--padding-xl);
-  gap: var(--gap-13xl);
-  z-index: 3;
-  text-align: center;
-  color: var(--gray-white);
+
+.callToAction:hover {
+  border: none;
 }
-.heroContent {
-  gap: 60px;
-  font-size: 66px;
-  color: var(--gray-50);
-}
-.callToAction {
-  gap: 13px;
-}
-.ctaPrimary,
-.heroActions {
-  gap: 22px;
+
+.doYouHaveContainer {
+  display: flex;
   align-items: flex-start;
-  max-width: 100%;
-}
-.heroActions {
-  flex-direction: row;
   justify-content: flex-start;
 }
-.ctaPrimary {
-  align-self: stretch;
-  flex-direction: column;
-  gap: var(--gap-13xl);
-  align-items: flex-start;
-  z-index: 2;
+
+.doYouHaveText {
+  padding: var(--padding-6xl) var(--padding-xl);
 }
