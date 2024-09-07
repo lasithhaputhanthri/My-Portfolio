@@ -209,7 +209,7 @@ const Homepage: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <div id="WhatIDo" >
+
         <div className={styles.callToAction}>
           <h1 className={styles.doYouHaveContainer}>
             <p className={styles.doYouHave}>Do you have Project Idea?</p>
@@ -223,6 +223,7 @@ const Homepage: FunctionComponent = () => {
             </div>
           </div>
         </div>
+      <div id="WhatIDo" >
         <WhatIDo />
       </div>
       
