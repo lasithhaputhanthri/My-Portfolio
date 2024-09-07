@@ -198,6 +198,12 @@ const Homepage: FunctionComponent = () => {
                   alt=""
                   src="/image-10@2x.png"
                 />
+                <img
+                  className={styles.image17Icon}
+                  loading="lazy"
+                  alt=""
+                  src="/vs.jpg"
+                />
               </div>
             </div>
           </div>
