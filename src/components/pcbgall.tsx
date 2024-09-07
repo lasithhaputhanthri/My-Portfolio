@@ -20,7 +20,7 @@ const Pcbgall: FunctionComponent<PortfolioType> = ({ className = "" }) => {
       
     },
     {
-      unsplashSavQfLRm4Do: "/photo_6244475496393982859_y.jpg",
+      unsplashSavQfLRm4Do: "/wb_full.png",
       productAdminDashboard: "SteerSafe Wristband PCB",
       vivamusEleifendConvallisAnte:
         "SteerSafe Wristband PCB is a compact 4-layer design with impedance matching and an onboard inverted-F antenna optimized for 2.4GHz, ensuring efficient wireless communication in wearable applications.",
@@ -41,19 +41,13 @@ const Pcbgall: FunctionComponent<PortfolioType> = ({ className = "" }) => {
       
     },
     {
-      unsplashSavQfLRm4Do: "/photo_6244475496393982863_x.jpg",
+      unsplashSavQfLRm4Do: "rat_full.png",
       productAdminDashboard: "Ratatouille Maze Solving Robot PCB",
       vivamusEleifendConvallisAnte:
         "Ratatouille Maze Solving Robot PCB is a compact 2-layer design optimized for controlling a maze-solving robot, providing efficient performance and streamlined routing for robotic automation tasks.",
       
     },
-    {
-      unsplashSavQfLRm4Do: "/photo_6244475496393982861_x.jpg",
-      productAdminDashboard: "HydroLink 1.0 PCB",
-      vivamusEleifendConvallisAnte:
-        "HydroLink 1.0 PCB is a 2-layer design featuring the ESP8266 module. As your first PCB project, it provides efficient wireless communication for IoT applications, enabling remote water level monitoring.",
-      
-    },
+
     {
       unsplashSavQfLRm4Do: "/photo_6244475496393982859_y.jpg",
       productAdminDashboard: "HydroLink 2.0 PCB",
@@ -73,6 +67,13 @@ const Pcbgall: FunctionComponent<PortfolioType> = ({ className = "" }) => {
       productAdminDashboard: "MeasureUp PCB",
       vivamusEleifendConvallisAnte:
         "MeasureUp PCB is a 2-layer design for high-precision height sensing. It features a compact layout tailored for accurate measurement in various applications, ensuring reliable and consistent performance.",
+      
+    },
+    {
+      unsplashSavQfLRm4Do: "/HL_Full.png",
+      productAdminDashboard: "HydroLink 1.0 PCB",
+      vivamusEleifendConvallisAnte:
+        "HydroLink 1.0 PCB is a 2-layer design featuring the ESP8266 module. As your first PCB project, it provides efficient wireless communication for IoT applications, enabling remote water level monitoring.",
       
     },
   ];

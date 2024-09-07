@@ -85,7 +85,7 @@ const Portfolio: FunctionComponent<PortfolioType> = ({ className = "" }) => {
                 propWidth2="400px"
                 propPadding1="0px 20px"
                 propAlignSelf2="unset"
-                uIUXDESIGN="UI-UX DESIGN"
+                //uIUXDESIGN="UI-UX DESIGN"
                 uIUXDESIGN1={false}
                 propWidth3="84px"
                 propHeight2="unset"
