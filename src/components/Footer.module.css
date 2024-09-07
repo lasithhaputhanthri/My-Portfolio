@@ -89,7 +89,96 @@
   font-family: var(--font-poppins);
 }
 @media screen and (max-width: 1525px) {
+  .footerC.footerChild {
+  display: none; /* Hide unnecessary child element */
+}
+
+.footer {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-31xl) 0; /* Reduce padding-bottom */
+  margin-bottom: 0; /* Ensure no extra margin */
+  z-index: 2;
+  text-align: left;
+  font-size: var(--heading-04-size);
+  color: var(--gray-white);
+  font-family: var(--font-poppins);
+  overflow: hidden; /* Prevent overflow */
+}
+
+.footerContent {
+  width: 100%; /* Ensure it uses full width */
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-13xl) var(--padding-281xl);
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+
+.siteLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  font-size: var(--body-regular-400-size);
+  color: var(--gray-50);
+  font-family: var(--body-regular-400);
+}
+
+.linkItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xs);
+}
+
+.home, .awards, .projects, .tools, .myInterests, .contact {
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  color: white;
+}
+
+@media screen and (max-width: 1525px) {
   .footerContent {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1225px) {
+  .footerContent {
+    padding-left: var(--padding-131xl);
+    padding-right: var(--padding-131xl);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .footerContent {
+    padding-left: var(--padding-56xl);
+    padding-right: var(--padding-56xl);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footerContent {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+ontent {
     flex-wrap: wrap;
   }
 }
