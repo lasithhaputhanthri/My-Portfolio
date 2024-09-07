@@ -11,7 +11,16 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
 <div className={[styles.footer, className].join(" ")}>
   <div className={styles.footerChild} />
   <div className={styles.footerContent}>
-    <Logo b="B" brooklyn="Created By Lasith" />
+  <Logo
+          propHeight="unset"
+          propWidth="unset"
+          b="LH"
+          propMargin="unset"
+          propMinWidth="28px"
+          propTextDecoration="none"
+          //brooklyn="Lasith Haputhanthri"
+          propColor="#132238"
+        />
     <div className={styles.siteLinks}>
       <div className={styles.linkItems}>
         <a href="#FrameComponent1" className={styles.linkText}>

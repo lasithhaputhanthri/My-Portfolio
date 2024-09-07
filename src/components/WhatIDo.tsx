@@ -37,22 +37,28 @@ const WhatIDo: FunctionComponent<WhatIDoType> = ({ className = "" }) => {
           </div>
           <div className={styles.serviceImage} />
         </div>
-        <WhatIDoCard
-          userExperienceUX="Embedded Systems "
-          loremIpsumDolorSitAmetConsect="Experienced in developing embedded systems, including programming microcontrollers and integrating sensors. I focus on creating efficient and reliable solutions that interact effectively with hardware for practical and innovative applications."
-          whatIDoCardHeight="unset"
-          userExperienceUXHeight="unset"
-        />
-        <WhatIDoCard
-          userExperienceUX="Robotics"
-          loremIpsumDolorSitAmetConsect="Experienced in designing robotic systems, including hardware integration and control. I focus on creating lightweight, functional robots that enhance accessibility and deliver practical, user-friendly solutions."
-        />
-        <WhatIDoCard
-          userExperienceUX="Digital System Design"
-          loremIpsumDolorSitAmetConsect="Familiar with FPGA digital system design, focusing on developing basic logic circuits and learning to optimize performance for various digital applications. I am gaining experience in using FPGA technology to create effective solutions."
-          whatIDoCardHeight="200px"
-          userExperienceUXHeight="24px"
-        />
+        <div className={styles.whatIDoCard}>
+          <h3 className={styles.userExperienceUx}>Embedded Systems</h3>
+          <div className={styles.loremIpsumDolor}>
+          Experienced in developing embedded systems, including programming microcontrollers and integrating sensors. I focus on creating efficient and reliable solutions that interact effectively with hardware for practical and innovative applications.
+          </div>
+          <div className={styles.serviceImage} />
+        </div>
+        <div className={styles.whatIDoCard}>
+          <h3 className={styles.userExperienceUx}>Robotics</h3>
+          <div className={styles.loremIpsumDolor}>
+          Experienced in designing robotic systems, including hardware integration and control. I focus on creating lightweight, functional robots that enhance accessibility and deliver practical, user-friendly solutions.
+          </div>
+          <div className={styles.serviceImage} />
+        </div>
+        <div className={styles.whatIDoCard}>
+          <h3 className={styles.userExperienceUx}>Digital System Design</h3>
+          <div className={styles.loremIpsumDolor}>
+          Familiar with FPGA digital system design, focusing on developing basic logic circuits and learning to optimize performance for various digital applications. I am gaining experience in using FPGA technology to create effective solutions.
+          </div>
+          <div className={styles.serviceImage} />
+        </div>
+
       </div>
     </div>
   );

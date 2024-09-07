@@ -2,7 +2,7 @@
 .projectCard1 .Project:hover,
 .projectCard2 .Project:hover,
 .button:hover {
-  transform: translateY(-10px); /* Increase this value to move up more */
+  transform: translateY(-12px); /* Increased hover-up distance */
   transition: transform 0.4s ease-in-out; /* Adjust duration and easing */
 }
 
@@ -16,9 +16,10 @@
 /* Hover state for buttons */
 .button:hover {
   background-color: var(--color-darkorchid-100);
-  transform: translateY(-8px); /* Increase hover-up distance for buttons */
+  transform: translateY(-10px); /* Increased hover-up distance for buttons */
   transition: transform 0.4s ease-in-out, background-color 0.3s ease-in-out;
 }
+
 .button {
   cursor: pointer;
   border: none;
@@ -32,6 +33,7 @@
   white-space: nowrap;
   z-index: 2;
 }
+
 .button1 {
   position: relative;
   font-size: var(--body-regular-400-size);
@@ -43,16 +45,18 @@
   display: inline-block;
   min-width: 93px;
 }
+
 .button2,
 .heroActions {
   flex-direction: row;
   justify-content: flex-start;
 }
+
 .button2 {
   cursor: pointer;
   border: none;
   padding: var(--padding-3xs) var(--padding-4xl);
-  background-color:"transparent";
+  background-color: transparent;
   border-radius: var(--br-9xs);
   display: flex;
   align-items: flex-start;
@@ -60,11 +64,13 @@
   white-space: nowrap;
   z-index: 2;
 }
+
 .button2:hover {
   background-color: var(--color-gainsboro-100);
   border: 1px solid var(--color-darkorchid-100);
   box-sizing: border-box;
 }
+
 .projects {
   margin: 0;
   position: relative;
@@ -73,6 +79,7 @@
   font-weight: 600;
   font-family: inherit;
 }
+
 .projectsIntro {
   width: 1920px;
   display: flex;
@@ -84,6 +91,7 @@
   min-height: 128px;
   max-width: 100%;
 }
+
 .projectCard1,
 .projectCard2 {
   display: flex;
@@ -95,14 +103,17 @@
   gap: var(--gap-5xl);
   max-width: 100%;
 }
+
 .projectCard1 {
   width: 1320px;
   padding: 0 0 var(--padding-5xs);
   box-sizing: border-box;
 }
+
 .projectCard2 {
   width: 1336px;
 }
+
 .portfolio1,
 .projectCard {
   justify-content: center; /* Centers horizontally */
@@ -112,6 +123,7 @@
   flex-direction: column;
   max-width: 100%;
 }
+
 .projectCard {
   align-items: center;
   justify-content: center;
@@ -121,11 +133,13 @@
   font-size: var(--body-thin-500-size);
   color: var(--gray-400);
 }
+
 .portfolio1 {
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-51xl);
 }
+
 .button1 {
   position: relative;
   font-size: var(--body-regular-400-size);
@@ -137,11 +151,13 @@
   display: inline-block;
   min-width: 101px;
 }
+
 .button,
 .portfolio {
   display: flex;
   align-items: center;
 }
+
 .button {
   cursor: pointer;
   border: 0;
@@ -152,9 +168,11 @@
   justify-content: center;
   white-space: nowrap;
 }
+
 .button:hover {
   background-color: var(--color-darkorchid-100);
 }
+
 .portfolio {
   align-self: stretch;
   flex-direction: column;
@@ -170,6 +188,7 @@
   color: var(--gray-900);
   font-family: var(--body-regular-400);
 }
+
 @media screen and (max-width: 1225px) {
   .portfolio1 {
     gap: var(--gap-16xl);
@@ -180,6 +199,7 @@
     box-sizing: border-box;
   }
 }
+
 @media screen and (max-width: 850px) {
   .projects {
     font-size: var(--heading-02-size);
@@ -195,6 +215,7 @@
     box-sizing: border-box;
   }
 }
+
 @media screen and (max-width: 450px) {
   .projects {
     font-size: var(--font-size-10xl);

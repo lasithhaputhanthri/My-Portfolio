@@ -1,3 +1,24 @@
+.homepage {
+  padding-right: 10px; /* Adjust this value to reduce the left space */
+  margin-left: -100px;
+  margin-right: -100px;
+  width: 100%;
+  position: relative;
+  background-color: var(--gray-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--heading-01-size);
+  color: var(--color-black);
+  font-family: var(--body-regular-400);
+  padding-top: 60px;
+}
 .footer,
 .footerContent,
 .siteLinks {
@@ -53,11 +74,11 @@
   box-sizing: border-box;
 }
 html {
-  transform: scale(1); /* Adjust the scale factor as needed */
-  transform-origin: 0 0; /* Ensure scaling starts from the top-left corner */
-  width: 100%; /* Adjust width to counteract zoom */
+  transform: scale(1);
+  transform-origin: 0 0;
+  width: 100%;
+  overflow-x: hidden; /* Added to prevent overflow */
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -360,15 +381,6 @@ html {
   justify-content: center;
   max-width: 100%;
 }
-.callToAction,
-.heroContent {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  max-width: 100%;
-}
 .callToAction {
   background-color: var(--gray-900);
   align-items: center;
@@ -379,161 +391,27 @@ html {
   color: var(--gray-white);
 }
 .heroContent {
+  gap: 60px;
+  font-size: 66px;
+  color: var(--gray-50);
+}
+.callToAction {
+  gap: 13px;
+}
+.ctaPrimary,
+.heroActions {
+  gap: 22px;
   align-items: flex-start;
-  padding: 0 0 72px;
+  max-width: 100%;
 }
-.frameChild,
-.frameItem {
-  position: absolute;
-  top: 5047.18px;
-  left: -350.88px;
-  filter: blur(500px);
-  border-radius: 50%;
-  background-color: rgba(218, 77, 241, 0.4);
-  width: 871.2px;
-  height: 871.2px;
-  transform: rotate(-130.4deg);
-  transform-origin: 0 0;
-}
-.frameItem {
-  top: 5369.19px;
-  left: 2163.39px;
-  filter: blur(600px);
-  background-color: rgba(196, 245, 233, 0.7);
-  width: 1044.3px;
-  height: 1044.3px;
-}
-.bgIcon {
-  position: absolute;
-  top: 0;
-  left: -195px;
-  width: 2611.2px;
-  height: 9522.2px;
-  z-index: 1;
-}
-.frameInner,
-.rectangleDiv {
-  position: absolute;
-  top: 383px;
-  left: 440px;
-  background-color: var(--color-pink);
-  width: 133px;
-  height: 6px;
-  z-index: 2;
-}
-.rectangleDiv {
-  left: 614px;
-  width: 92px;
-}
-.unsplashwkokidnt14wIcon {
-  position: absolute;
-  top: 109px;
-  left: 1060px;
-  border-radius: 25px;
-  width: 536px;
-  height: 636px;
-  object-fit: cover;
-  z-index: 2;
-}
-.ellipseParent {
-  width: 100%;
-  height: 8272px;
-  position: absolute;
-  margin: 0 !important;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.homepage {
-  padding-right: 10px; /* Adjust this value to reduce the left space */
-  margin-left: -100px;
-  margin-right: -100px;
-  width: 100%;
-  position: relative;
-  background-color: var(--gray-white);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.heroActions {
+  flex-direction: row;
   justify-content: flex-start;
-  box-sizing: border-box;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  font-size: var(--heading-01-size);
-  color: var(--color-black);
-  font-family: var(--body-regular-400);
-  padding-top: 60px;
 }
-@media screen and (max-width: 1225px) {
-  .workProcess {
-    padding: 161px 41px var(--padding-72xl) var(--padding-131xl);
-    box-sizing: border-box;
-  }
-  .heroContent {
-    padding-bottom: 31px;
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 850px) {
-  .tools {
-    font-size: var(--heading-02-size);
-    line-height: 45px;
-  }
-  .workProcessCardParent {
-    flex: 1;
-  }
-  .processSteps {
-    flex-wrap: wrap;
-  }
-  .workProcessCardContainer {
-    flex: 1;
-  }
-  .frameParent {
-    flex-wrap: wrap;
-  }
-  .workProcess {
-    padding-left: var(--padding-56xl);
-    padding-top: 105px;
-    padding-bottom: 59px;
-    box-sizing: border-box;
-  }
-  .doYouHaveContainer {
-    font-size: var(--heading-02-size);
-    line-height: 45px;
-  }
-  .callToAction {
-    gap: var(--gap-base);
-    padding-top: var(--padding-72xl);
-    padding-bottom: var(--padding-72xl);
-
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 450px) {
-  .subheader {
-    font-size: var(--body-regular-400-size);
-    line-height: 19px;
-  }
-  .tools {
-    font-size: var(--font-size-10xl);
-    line-height: 34px;
-  }
-  .edaTools {
-    font-size: var(--body-regular-400-size);
-    line-height: 19px;
-  }
-  .workProcess {
-    padding-left: var(--padding-xl);
-    box-sizing: border-box;
-  }
-  .doYouHaveContainer {
-    font-size: var(--font-size-10xl);
-    line-height: 34px;
-    box-sizing: border-box;
-  }
-  .heroContent {
-    padding-bottom: var(--padding-xl);
-    box-sizing: border-box;
-  }
+.ctaPrimary {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-13xl);
+  align-items: flex-start;
+  z-index: 2;
 }
