@@ -20,7 +20,7 @@ a:hover {
 
 .logoParent {
   flex: 1;
-  background-color: var(--gray-white);
+  background-color: rgba(255, 255, 255, 0.9);
   justify-content: space-between;
   padding: var(--padding-xl) var(--padding-281xl);
   top: 0;
@@ -46,8 +46,9 @@ a:hover {
   align-items: left;
   justify-content: flex-start;
   /* padding: var(--padding-xl); */
-  width: 1000px; /* Adjust as necessary */
+  width: 700px; /* Adjust as necessary */
   gap: 20px; /* Increased spacing between items */
+  
 }
 
 /* Link Styles in Navigation */
@@ -121,5 +122,6 @@ a:hover {
   .homepageInner {
     padding-bottom: var(--padding-174xl);
     box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
   }
 }
