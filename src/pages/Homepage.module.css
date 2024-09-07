@@ -1,8 +1,8 @@
 .homepage {
   padding-right: 10px; /* Adjust this value to reduce the left space */
-  margin-left: -100px;
+  margin-left: -150px;
   margin-right: -100px;
-  width: 100%;
+  width: 110%;
   position: relative;
   background-color: var(--gray-white);
   overflow: hidden;
@@ -17,7 +17,7 @@
   font-size: var(--heading-01-size);
   color: var(--color-black);
   font-family: var(--body-regular-400);
-  padding-top: 60px;
+  padding-top: 100px;
 }
 .footer,
 .footerContent,
