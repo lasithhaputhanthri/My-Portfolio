@@ -129,7 +129,7 @@ const Pcbgall: FunctionComponent<PortfolioType> = ({ className = "" }) => {
                 propWidth4="unset"
                 propDisplay1="unset"
                 propAlignSelf3="stretch"
-                letsWorkTogether="See More"
+                letsWorkTogether="Full View"
                 propBorder="1px solid #a53dff"
                 propBackgroundColor="#fff"
                 propDisplay2="inline-block"
@@ -144,7 +144,7 @@ const Pcbgall: FunctionComponent<PortfolioType> = ({ className = "" }) => {
       </div>
       {visibleProjects < projects.length && (
         <a className={styles.button} onClick={handleSeeMore}>
-          <div className={styles.button1}>More Projects</div>
+          <div className={styles.button1}>More PCB</div>
         </a>
       )}
       {modalImage && (

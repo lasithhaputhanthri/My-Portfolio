@@ -228,7 +228,7 @@ const Homepage: FunctionComponent = () => {
       
       <div id="FrameComponent3" className={styles.heroContent}>
         
-      {/* <FrameComponent3 /> */}
+        <FrameComponent3 />
       </div>
       <Footer />
       <div className={styles.ellipseParent}>

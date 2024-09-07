@@ -15,18 +15,19 @@ a:hover {
   flex-direction: row;
   align-items: flex-start;
   max-width: 100%;
-  position: fixed; /* Fixes the navigation bar at the top */
-  width: 100%; /* Ensures the navigation bar spans the full width */
-  transition: transform 0.3s ease; /* Smooth transition for hiding/showing */
-  background-color: var(--gray-white);
-  z-index: 99;
+  position: relative; /* Ensure positioning is relative to its normal position */
 }
 
 .logoParent {
   flex: 1;
+  background-color: var(--gray-white);
   justify-content: space-between;
   padding: var(--padding-xl) var(--padding-281xl);
   top: 0;
+  z-index: 99;
+  position: fixed; /* Fixes the navigation bar at the top */
+  width: 100%; /* Ensures the navigation bar spans the full width */
+  gap: var(--gap-xl);
   text-align: left;
   font-size: var(--body-regular-400-size);
   color: var(--color-darkslategray-100);
@@ -45,7 +46,7 @@ a:hover {
   align-items: left;
   justify-content: flex-start;
   /* padding: var(--padding-xl); */
-  width: 800px; /* Adjust as necessary */
+  width: 1000px; /* Adjust as necessary */
   gap: 20px; /* Increased spacing between items */
 }
 
@@ -121,13 +122,4 @@ a:hover {
     padding-bottom: var(--padding-174xl);
     box-sizing: border-box;
   }
-}
-
-/* Show/Hide Navigation */
-.visible {
-  transform: translateY(0); /* Show navigation bar */
-}
-
-.hidden {
-  transform: translateY(-100%); /* Hide navigation bar */
 }

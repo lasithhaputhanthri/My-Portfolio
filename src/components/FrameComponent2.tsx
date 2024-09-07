@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { FunctionComponent } from "react";
 import Logo from "./Logo";
 import styles from "./FrameComponent2.module.css";
@@ -10,32 +9,9 @@ export type FrameComponent2Type = {
 const FrameComponent2: FunctionComponent<FrameComponent2Type> = ({
   className = "",
 }) => {
-  const [isScrollingUp, setIsScrollingUp] = useState(true);
-  const [lastScrollTop, setLastScrollTop] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (currentScrollTop > lastScrollTop) {
-        // Scrolling down
-        setIsScrollingUp(false);
-      } else {
-        // Scrolling up
-        setIsScrollingUp(true);
-      }
-      setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop); // For Mobile or negative scrolling
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollTop]);
-
   return (
     <div className={[styles.homepageInner, className].join(" ")}>
-      <header className={`${styles.logoParent} ${!isScrollingUp ? styles.hidden : ''}`}>
+      <header className={styles.logoParent}>
         <Logo
           propHeight="unset"
           propWidth="unset"
