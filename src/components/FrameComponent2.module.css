@@ -43,11 +43,10 @@ a:hover {
 .navigation {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: left;
   justify-content: flex-start;
-  padding: var(--padding-xl);
-  padding: left 5000px;
-  width: auto; /* Adjust as necessary */
+  /* padding: var(--padding-xl); */
+  width: 800px; /* Adjust as necessary */
   gap: 20px; /* Increased spacing between items */
 }
 
