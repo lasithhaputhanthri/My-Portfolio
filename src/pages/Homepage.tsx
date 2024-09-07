@@ -232,13 +232,6 @@ const Homepage: FunctionComponent = () => {
         <FrameComponent3 />
       </div>
       <Footer />
-      <div className={styles.ellipseParent}>
-        <div className={styles.frameChild} />
-        <div className={styles.frameItem} />
-        <img className={styles.bgIcon} alt="" src="/bg.svg" />
-        <div className={styles.frameInner} />
-        <div className={styles.rectangleDiv} />
-      </div>
     </div>
   );
 };
