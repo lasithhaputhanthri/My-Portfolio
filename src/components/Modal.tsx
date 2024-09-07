@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import styles from "./Modal.module.css";
+import styles from "./modal.module.css";
 
 type ModalProps = {
   imageUrl: string;
