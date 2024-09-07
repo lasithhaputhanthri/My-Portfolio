@@ -1,8 +1,8 @@
 .homepage {
   padding-right: 10px; /* Adjust this value to reduce the left space */
-  margin-left: -150px;
-  margin-right: -100px;
-  width: 110%;
+  margin-left: -195px;
+  margin-right: -120px;
+  width: 112%;
   position: relative;
   background-color: var(--gray-white);
   overflow: hidden;
