@@ -9,7 +9,7 @@
   overflow: hidden; /* Ensures the text disappears as it is being typed */
   white-space: nowrap; /* Keeps the text in a single line */
   border-right: 0.15em solid orange; /* The cursor effect */
-  animation: typingOne 5s steps(20, end) 0s infinite, blink-caret 0.5s step-end infinite;
+  animation: typingOne 5s steps(20, end) 1s infinite, blink-caret 0.5s step-end infinite;
 }
 
 /* Typewriter effect for "Lasith Haputhanthri" */
@@ -19,22 +19,10 @@
   white-space: nowrap;
   border-right: 0.15em solid orange;
   visibility: hidden;
-  animation: typingTwo 5s steps(20, end) 1s infinite, blink-caret 0.5s step-end infinite;
+  animation: typingTwo 5s steps(20, end) 3s infinite, blink-caret 0.5s step-end infinite;
 }
 
-/* Animation for typing "Hello, I’m" */
-@keyframes typingOne {
-  0% { width: 0; }
-  50% { width: 12em; } /* Adjust width to fit "Hello, I’m " */
-  100% { width: 0; }
-}
 
-/* Animation for typing "Lasith Haputhanthri" */
-@keyframes typingTwo {
-  0% { width: 0; visibility: hidden; }
-  50% { width: 9em; visibility: visible; } /* Adjust width to fit "Lasith Haputhanthri" */
-  100% { width: 0; visibility: hidden; }
-}
 
 /* Blinking cursor effect */
 /* Blinking cursor effect */
@@ -47,14 +35,14 @@
 /* Animation for typing "Hello, I’m" */
 @keyframes typingOne {
   0% { width: 0; }
-  50% { width: 50em; } /* Adjust width to fit "Hello, I’m " */
+  50% { width: 10em; } /* Adjust width to fit "Hello, I’m " */
   100% { width: 0; }
 }
 
 /* Animation for typing "Lasith Haputhanthri" */
 @keyframes typingTwo {
   0% { width: 0; visibility: hidden; }
-  50% { width: 12em; visibility: visible; } /* Adjust width to fit "Lasith Haputhanthri" */
+  50% { width: 10em; visibility: visible; } /* Adjust width to fit "Lasith Haputhanthri" */
   100% { width: 0; visibility: hidden; }
 }
 
