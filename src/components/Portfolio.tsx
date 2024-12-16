@@ -50,7 +50,7 @@ const Portfolio: FunctionComponent<PortfolioType> = ({ className = "" }) => {
       productAdminDashboard: "LUNA: Vision-based Automated Restaurant Robot",
       vivamusEleifendConvallisAnte:
         "Developing a restaurant robot using ROS and Kinect2, equipped with a Kalman-filter-based food stabilization tray to avoid beverage spillage. The robot enhances efficiency in restaurant environments with advanced sensor technologies and robotic functionalities, including a custom restaurant environment planner front-end.",
-      linkaddress: "",
+      linkaddress: "https://github.com/LUNA-Vision-based-Restaurant-Robot",
     },
   ];
 
