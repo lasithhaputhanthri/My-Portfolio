@@ -98,6 +98,44 @@ const Archevements: FunctionComponent<ArchevementsType> = ({
               propFlex="unset"
               propWidth="unset"
               propPadding="0px 0px 30px"
+              unsplashSavQfLRm4Do="/WhatsApp Image 2024-10-24 at 01.38.16_6d69c3d9.jpg"
+              propWidth1="unset"
+              propMaxHeight="unset"
+              propAlignSelf="stretch"
+              propHeight1="248px"
+              propOverflow="hidden"
+              propAlignSelf1="unset"
+              propWidth2="400px"
+              propPadding1="0px 20px"
+              propAlignSelf2="unset"
+              uIUXDESIGN="1st Runners Up"
+              uIUXDESIGN1
+              propWidth3="unset"
+              propHeight2="unset"
+              propMinWidth1="89px"
+              productAdminDashboard="IEEE Challenge Sphere Circuit Challenge 2024"
+              propDisplay="unset"
+              propMinWidth2="unset"
+              vivamusEleifendConvallisAnte=" StearSafe: A spectacle frame and watch that can use the EOG signals from the user to measure drowsiness  and alert the user."
+              propWidth4="unset"
+              propDisplay1="unset"
+              propAlignSelf3="stretch"
+              letsWorkTogether="See More"
+              propBorder="1px solid #a53dff"
+              propBackgroundColor="#fff"
+              propDisplay2="inline-block"
+              propMinWidth3="74px"
+              propColor="#a53dff"
+              linkaddress="https://www.linkedin.com/posts/ieeesrilanka_ieee-ieeesl-challengesphere2024-activity-7265974873171083264-mtRM/?utm_source=share&utm_medium=member_desktop"
+              
+            />
+            <Project
+              propMinWidth="unset"
+              propHeight="unset"
+              propBoxShadow="unset"
+              propFlex="unset"
+              propWidth="unset"
+              propPadding="0px 0px 30px"
               unsplashSavQfLRm4Do="/whatsapp-image-20240819-at-164708-0e35114c@2x.png"
               propWidth1="unset"
               propMaxHeight="unset"
@@ -128,6 +166,8 @@ const Archevements: FunctionComponent<ArchevementsType> = ({
               propColor="#a53dff"
               
             />
+
+
           </div>
         </div>
       </div>
