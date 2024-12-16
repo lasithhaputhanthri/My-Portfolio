@@ -114,7 +114,7 @@ const FrameComponent3: React.FC<FrameComponent3Type> = ({
               </div>
               <div className={styles.name}>
                 <input
-                  className={styles.email1}
+                  className={styles.name1}
                   placeholder="Email*"
                   name="user_email"
                   type="text"
@@ -123,7 +123,7 @@ const FrameComponent3: React.FC<FrameComponent3Type> = ({
               </div>
               <div className={styles.name}>
                 <input
-                  className={styles.location1}
+                  className={styles.name1}
                   placeholder="Location*"
                   name="user_location"
                   type="text"
@@ -132,7 +132,7 @@ const FrameComponent3: React.FC<FrameComponent3Type> = ({
               </div>
               <div className={styles.name}>
                   <input
-                    className={styles.location1}
+                    className={styles.name1}
                     placeholder="Subject*"
                     name="subject"
                     type="text"
@@ -142,7 +142,7 @@ const FrameComponent3: React.FC<FrameComponent3Type> = ({
               </div>
               <div className={styles.message}>
                 <input
-                  className={styles.message1}
+                  className={styles.name1}
                   placeholder="Message*"
                   name="message"
                   type="text"
