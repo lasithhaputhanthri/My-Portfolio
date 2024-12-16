@@ -18,8 +18,8 @@ const FrameComponent3: React.FC<FrameComponent3Type> = ({
 
     emailjs
       .sendForm(
-        "service_5xrjtdq",    // Your EmailJS service ID
-        "template_yjb7p3r",   // Your EmailJS template ID
+        "service_jv32els",    // Your EmailJS service ID
+        "template_8o4uq9r",   // Your EmailJS template ID
         form.current!,
         "IWfuOGj5JdGc6sXjy"        // Replace this with your EmailJS user ID
       )
@@ -124,17 +124,21 @@ const FrameComponent3: React.FC<FrameComponent3Type> = ({
               <div className={styles.name}>
                 <input
                   className={styles.location1}
-                  placeholder="Location"
+                  placeholder="Location*"
                   name="user_location"
                   type="text"
                 />
                 <div className={styles.emailChild} />
               </div>
-              <div className={styles.budgetSubject}>
-                <div className={styles.subject}>
-                  <div className={styles.subject1}>Subject*</div>
+              <div className={styles.name}>
+                  <input
+                    className={styles.location1}
+                    placeholder="Subject*"
+                    name="subject"
+                    type="text"
+                  />
                   <div className={styles.emailChild} />
-                </div>
+                
               </div>
               <div className={styles.message}>
                 <input
