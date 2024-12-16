@@ -58,7 +58,7 @@ const FrameComponent3: React.FC<FrameComponent3Type> = ({
             />
             <AddressCard
               address="Call Me Now:"
-              newMexico31134="+94-711307741"
+              newMexico31134="+94-750480525"
             />
           </div>
           <div className={styles.socialMedia}>
