@@ -10,10 +10,12 @@ import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import styles from "./Homepage.module.css";
 import PCBGallery from "../components/PCBGallery";
+import CustomCursor from "../components/CustomCursor";
 
 const Homepage: FunctionComponent = () => {
   return (
     <div className={styles.homepage}>
+      <CustomCursor />
       <Header />
       <div id="HeroSection" style={{ width: '100%' }}>
         <HeroSection />
