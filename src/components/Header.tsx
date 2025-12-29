@@ -22,7 +22,7 @@ const Header: FunctionComponent<HeaderType> = ({
           propMinWidth="28px"
           propTextDecoration="none"
           brooklyn="Lasith Haputhanthri"
-          propColor="#132238"
+          propColor="var(--gray-900)"
         />
         <div className={styles.navigation}>
           <a href="#HeroSection" className={styles.navLinks}>Home</a>
