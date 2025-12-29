@@ -2,6 +2,8 @@ import { FunctionComponent } from "react";
 import Logo from "./Logo";
 import styles from "./Header.module.css";
 
+import ThemeToggle from "./ThemeToggle";
+
 export type HeaderType = {
   className?: string;
 };
@@ -28,6 +30,7 @@ const Header: FunctionComponent<HeaderType> = ({
           <a href="#Portfolio" className={styles.navLinks}>Projects</a>
           <a href="#WorkProcessCard" className={styles.navLinks}>Tools</a>
           <a href="#Services" className={styles.navLinks}>My Interests</a>
+          <ThemeToggle />
           <a href="#ContactSection" className={styles.contactButton}>Contact</a>
         </div>
       </header>
