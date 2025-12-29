@@ -3,6 +3,7 @@
   border: none;
   padding: var(--padding-xs) var(--padding-5xl);
   background-color: var(--primary-500);
+  color: var(--text-on-primary);
   border-radius: var(--br-9xs);
   display: flex;
   flex-direction: row;
@@ -18,7 +19,7 @@
   line-height: 24px;
   font-weight: 600;
   font-family: var(--body-regular-400);
-  color: var(--gray-white);
+  color: var(--text-on-primary);
   text-align: left;
   display: inline-block;
   min-width: 93px;
@@ -130,12 +131,16 @@
   font-size: var(--body-thin-500-size);
   color: var(--gray-400);
   font-family: var(--body-regular-400);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition for hover effect */
 }
 
 .project:hover {
-  transform: translateY(-10px); /* Float effect by moving the element up */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);; /* Increased shadow effect */
+  transform: translateY(-10px);
+  /* Float effect by moving the element up */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  ;
+  /* Increased shadow effect */
 }
 
 @media screen and (max-width: 450px) {

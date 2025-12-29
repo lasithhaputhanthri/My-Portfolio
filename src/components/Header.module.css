@@ -111,7 +111,7 @@ a:hover {
   line-height: 24px;
   font-weight: 600;
   font-family: var(--body-regular-400);
-  color: var(--gray-white);
+  color: var(--text-on-primary);
   text-align: left;
   display: inline-block;
 }
@@ -121,6 +121,7 @@ a:hover {
   border: 0;
   padding: 8px 16px;
   background-color: var(--primary-500);
+  color: var(--text-on-primary);
   border-radius: var(--br-9xs);
   display: flex;
   align-items: center;
@@ -145,7 +146,7 @@ a:hover {
   font-size: var(--body-regular-400-size);
   transition: background-color 0.3s;
   text-decoration: none;
-  color: var(--gray-white);
+  color: var(--text-on-primary);
   font-weight: 600;
   font-family: var(--body-regular-400);
   height: 40px;

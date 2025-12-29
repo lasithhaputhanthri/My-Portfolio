@@ -1,7 +1,10 @@
 .letsWorkTogether {
-  cursor: pointer; /* Ensures the link is clickable */
-  color: inherit; /* Inherits the color from the component props */
-  text-decoration: none; /* Removes any default link underlines */
+  cursor: pointer;
+  /* Ensures the link is clickable */
+  color: inherit;
+  /* Inherits the color from the component props */
+  text-decoration: none;
+  /* Removes any default link underlines */
 }
 
 /* Additional CSS */
@@ -14,11 +17,13 @@
   flex-shrink: 0;
   min-height: 24px;
 }
+
 .button {
   cursor: pointer;
   border: 0;
   padding: var(--padding-xs) var(--padding-5xl);
   background-color: var(--primary-500);
+  color: var(--text-on-primary);
   border-radius: var(--br-9xs);
   display: flex;
   flex-direction: row;
@@ -26,6 +31,7 @@
   justify-content: center;
   gap: var(--gap-xs);
 }
+
 .button:hover {
   background-color: var(--color-darkorchid-100);
 }

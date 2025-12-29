@@ -47,6 +47,7 @@ body {
   --gray-400: #87909d;
   --gray-600: #556070;
   --color-black: #000;
+  --text-on-primary: #ffffff;
 
   /* Gaps */
   --gap-xl: 20px;
