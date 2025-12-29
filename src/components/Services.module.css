@@ -1,7 +1,7 @@
 /* Base Styles */
 .whatIDo {
   align-self: stretch;
-  background-color: var(--gray-50);
+  background-color: transparent;
   padding: 120px var(--padding-xl);
   box-sizing: border-box;
   text-align: left;
