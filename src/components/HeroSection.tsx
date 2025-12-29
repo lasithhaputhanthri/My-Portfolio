@@ -65,8 +65,8 @@ const HeroSection: FunctionComponent<HeroSectionType> = ({
               <div className={styles.button1}>My Projects</div>
             </a>
             <a
-              href={`${import.meta.env.BASE_URL}My_CV.pdf`} // Update with the path to your document
-              download="My_CV.pdf">
+              href={`${import.meta.env.BASE_URL}H_L_N_B_Haputhanthri_CV_Embeded.pdf`} // Update with the path to your document
+              download="H_L_N_B_Haputhanthri_CV_Embeded.pdf">
               <button className={styles.button2}>
                 <img
                   className={styles.button2}
