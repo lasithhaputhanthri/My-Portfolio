@@ -1,215 +1,98 @@
 import { FunctionComponent } from "react";
-import FrameComponent2 from "../components/FrameComponent2";
-import FrameComponent1 from "../components/FrameComponent1";
-import Archevements from "../components/Archevements";
+import Header from "../components/Header";
+import HeroSection from "../components/HeroSection";
+import Achievements from "../components/Achievements";
 import Portfolio from "../components/Portfolio";
 import WorkProcessCard from "../components/WorkProcessCard";
 import Button from "../components/Button";
-import WhatIDo from "../components/WhatIDo";
-import FrameComponent3 from "../components/FrameComponent3";
+import Services from "../components/Services";
+import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import styles from "./Homepage.module.css";
-import Pcbgall from "../components/pcbgall";
+import PCBGallery from "../components/PCBGallery";
 
 const Homepage: FunctionComponent = () => {
   return (
     <div className={styles.homepage}>
-      <div className={styles.icon1}>
-        <img className={styles.houseIcon} alt="" src="/house.svg" />
+      <Header />
+      <div id="HeroSection" style={{ width: '100%' }}>
+        <HeroSection />
       </div>
-      <div className={styles.icon0}>
-
-        <img className={styles.houseIcon} alt="" src="/phonecall.svg" />
+      <div id="Achievements" style={{ width: '100%' }}>
+        <Achievements />
       </div>
-      <FrameComponent2 />
-      <div id="FrameComponent1" >
-        <FrameComponent1 />
-      </div>
-      <div id="Archevements">
-        <Archevements />
-      </div>
-      <div id="Portfolio">
+      <div id="Portfolio" style={{ width: '100%' }}>
         <Portfolio />
       </div>
-      <div id="Portfolio">
-        <Pcbgall />
+      <div id="PCBGallery" style={{ width: '100%' }}>
+        <PCBGallery />
       </div>
-      <div id="WorkProcessCard" >
+      <div id="WorkProcessCard" style={{ width: '100%' }}>
         <div className={styles.workProcess}>
-          <h1 className={styles.tools}>Tools</h1>
+          <h1 className={styles.tools}>Tools & Workflow</h1>
           <div className={styles.processContent}>
             <div className={styles.processSteps}>
+              {/* Card 1: EDA Tools */}
               <div className={styles.workProcessCardParent}>
                 <WorkProcessCard
-                  propHeight="unset"
-                  propFlex="1"
-                  propFlexDirection="column"
-                  propBoxShadow="32px 32px 124px rgba(43, 56, 76, 0.1)"
-                  propBackgroundColor="#a53dff"
-                  showFrameDiv={false}
-                  propWidth="248px"
-                  propFlexDirection1="column"
-                  propFlex1="unset"
                   research="1. Research"
-                  propDisplay="inline-block"
-                  propMinWidth="unset"
-                  propHeight1="24px"
-                  showLoremIpsumDolor={false}
-                  propAlignSelf="stretch"
-                  propWidth1="unset"
-                />
-                <img
-                  className={styles.image2Icon}
-                  loading="lazy"
-                  alt=""
-                  src="/image-21@2x.png"
+                  showLoremIpsumDolor={true}
+                  description="Identifying requirements and selecting the best components for the project."
                 />
                 <div className={styles.edaTools}>EDA Tools</div>
-                <img
-                  className={styles.image1Icon}
-                  loading="lazy"
-                  alt=""
-                  src="/image-11@2x.png"
-                />
+                <div className={styles.toolIcons}>
+                  <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-4@2x.png`} />
+                  <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-5@2x.png`} />
+                  <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-6@2x.png`} />
+                </div>
               </div>
+
+              {/* Card 2: 3D Modeling */}
               <div className={styles.workProcessCardGroup}>
                 <WorkProcessCard
-                  propHeight="195px"
-                  propFlex="unset"
-                  propFlexDirection="row"
-                  propBoxShadow="unset"
-                  propBackgroundColor="rgba(237, 216, 255, 0.5)"
-                  showFrameDiv
-                  propWidth="unset"
-                  propFlexDirection1="column"
-                  propFlex1="1"
                   research="3D Modeling and 3D printing"
-                  propDisplay="unset"
-                  propMinWidth="unset"
-                  propHeight1="unset"
-                  showLoremIpsumDolor
-                  propAlignSelf="unset"
-                  propWidth1="248px"
+                  showLoremIpsumDolor={true}
+                  description="Designing custom enclosures and mechanical parts for seamless integration."
                 />
-                <img
-                  className={styles.image4Icon}
-                  loading="lazy"
-                  alt=""
-                  src="/image-4@2x.png"
-                />
-                <img
-                  className={styles.image3Icon}
-                  alt=""
-                  src="/image-31@2x.png"
-                />
+                <div className={styles.toolIcons}>
+                  <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-7@2x.png`} />
+                  <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-8@2x.png`} />
+                  <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-9@2x.png`} />
+                </div>
               </div>
-            </div>
-            <div className={styles.frameParent}>
+
+              {/* Card 3: Electronics */}
               <div className={styles.workProcessCardContainer}>
                 <WorkProcessCard
-                  propHeight="unset"
-                  propFlex="1"
-                  propFlexDirection="row"
-                  propBoxShadow="unset"
-                  propBackgroundColor="rgba(237, 216, 255, 0.5)"
-                  showFrameDiv
-                  propWidth="unset"
-                  propFlexDirection1="row"
-                  propFlex1="unset"
                   research="Electronics"
-                  propDisplay="inline-block"
-                  propMinWidth="111px"
-                  propHeight1="unset"
-                  showLoremIpsumDolor={false}
-                  propAlignSelf="unset"
-                  propWidth1="248px"
+                  showLoremIpsumDolor={true}
+                  description="Circuit design, PCB layout, and hardware assembly."
                 />
-                <img
-                  className={styles.image14Icon}
-                  loading="lazy"
-                  alt=""
-                  src="/image-14@2x.png"
-                />
-                <img
-                  className={styles.image9Icon}
-                  loading="lazy"
-                  alt=""
-                  src="/image-9@2x.png"
-                />
-                <img
-                  className={styles.image8Icon}
-                  loading="lazy"
-                  alt=""
-                  src="/image-8@2x.png"
-                />
-                <img
-                  className={styles.image7Icon}
-                  loading="lazy"
-                  alt=""
-                  src="/image-7@2x.png"
-                />
-                <img
-                  className={styles.image6Icon}
-                  loading="lazy"
-                  alt=""
-                  src="/image-6@2x.png"
-                />
-                <img
-                  className={styles.image5Icon}
-                  loading="lazy"
-                  alt=""
-                  src="/image-5@2x.png"
-                />
+                <div className={styles.toolIcons}>
+                  <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-10@2x.png`} />
+                  <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-11@2x.png`} />
+                  <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-12@2x.png`} />
+                </div>
               </div>
+
+              {/* Card 4: Programming */}
               <div className={styles.workProcessCardGroup}>
                 <WorkProcessCard
-                  showFrameDiv
                   research="Programming"
-                  showLoremIpsumDolor
+                  showLoremIpsumDolor={true}
+                  description="Developing firmware and software to bring the hardware to life."
                 />
-                <img
-                  className={styles.image16Icon}
-                  loading="lazy"
-                  alt=""
-                  src="/image-16@2x.png"
-                />
-                <img
-                  className={styles.image13Icon}
-                  loading="lazy"
-                  alt=""
-                  src="/image-13@2x.png"
-                />
-                <div className={styles.image12Parent}>
-                  <img
-                    className={styles.image12Icon}
-                    loading="lazy"
-                    alt=""
-                    src="/image-12@2x.png"
-                  />
-                  <img
-                    className={styles.image11Icon}
-                    alt=""
-                    src="/image-111@2x.png"
-                  />
+                <div className={styles.toolIcons}>
+                  <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-13@2x.png`} />
+                  <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-14@2x.png`} />
+                  <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-15@2x.png`} />
                 </div>
-                <img
-                  className={styles.image10Icon}
-                  loading="lazy"
-                  alt=""
-                  src="/image-10@2x.png"
-                />
-                <img
-                  className={styles.image17Icon}
-                  loading="lazy"
-                  alt=""
-                  src="/vs.jpg"
-                />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="WhatIDo" >
+      <div id="Services" style={{ width: '100%' }}>
         <div className={styles.callToAction}>
           <h1 className={styles.doYouHaveContainer}>
             <p className={styles.doYouHave}>Do you have Project Idea?</p>
@@ -217,19 +100,18 @@ const Homepage: FunctionComponent = () => {
           </h1>
           <div className={styles.workTogether}>
             <div className={styles.heroActions}>
-            <a href="#FrameComponent3" className={styles.button}>
-              <div className={styles.button2}>Contact Me</div>
-            </a> 
+              <a href="#ContactSection" className={styles.button}>
+                <div className={styles.button2}>Contact Me</div>
+              </a>
             </div>
           </div>
         </div>
-      
-        <WhatIDo />
+
+        <Services />
       </div>
-      
-      <div id="FrameComponent3" className={styles.heroContent}>
-        
-        <FrameComponent3 />
+
+      <div id="ContactSection" style={{ width: '100%' }}>
+        <ContactSection />
       </div>
       <Footer />
     </div>

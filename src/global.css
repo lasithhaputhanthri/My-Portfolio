@@ -120,3 +120,40 @@ body {
   --br-xs: 12px;
   --br-5xs: 8px;
 }
+
+/* Mobile-first responsive improvements */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Mobile responsive typography */
+@media screen and (max-width: 450px) {
+  :root {
+    --display-size: 36px;
+    --heading-01-size: 32px;
+    --heading-02-size: 28px;
+    --heading-03-size: 24px;
+    --heading-04-size: 20px;
+    --heading-05-size: 18px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  :root {
+    --display-size: 32px;
+    --heading-01-size: 28px;
+    --heading-02-size: 24px;
+    --heading-03-size: 20px;
+    --heading-04-size: 18px;
+    --heading-05-size: 16px;
+  }
+}

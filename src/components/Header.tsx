@@ -1,12 +1,12 @@
 import { FunctionComponent } from "react";
 import Logo from "./Logo";
-import styles from "./FrameComponent2.module.css";
+import styles from "./Header.module.css";
 
-export type FrameComponent2Type = {
+export type HeaderType = {
   className?: string;
 };
 
-const FrameComponent2: FunctionComponent<FrameComponent2Type> = ({
+const Header: FunctionComponent<HeaderType> = ({
   className = "",
 }) => {
   return (
@@ -23,18 +23,16 @@ const FrameComponent2: FunctionComponent<FrameComponent2Type> = ({
           propColor="#132238"
         />
         <div className={styles.navigation}>
-          <a href="#FrameComponent1" className={styles.navLinks}>Home</a>
-          <a href="#Archevements" className={styles.navLinks}>Awards</a>
+          <a href="#HeroSection" className={styles.navLinks}>Home</a>
+          <a href="#Achievements" className={styles.navLinks}>Awards</a>
           <a href="#Portfolio" className={styles.navLinks}>Projects</a>
-          <a href="#WorkProcessCard" className={styles.navLinks}>Tools</a>       
-          <a href="#WhatIDo" className={styles.navLinks}>My Interests</a> 
-          <button className={styles.button}>
-            <a href="#FrameComponent3" className={styles.button1}>Contact</a>
-          </button>
+          <a href="#WorkProcessCard" className={styles.navLinks}>Tools</a>
+          <a href="#Services" className={styles.navLinks}>My Interests</a>
+          <a href="#ContactSection" className={styles.contactButton}>Contact</a>
         </div>
       </header>
     </div>
   );
 };
 
-export default FrameComponent2;
+export default Header;

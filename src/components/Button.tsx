@@ -48,7 +48,7 @@ const Button: FunctionComponent<ButtonType> = ({
       <img
         className={styles.userInterfacePaperPlane}
         alt=""
-        src="/user-interface--paper-plane.svg"
+        src={`${import.meta.env.BASE_URL}user-interface--paper-plane.svg`}
       />
     </button>
   );

@@ -11,42 +11,42 @@ const Portfolio: FunctionComponent<PortfolioType> = ({ className = "" }) => {
 
   const projects = [
     {
-      unsplashSavQfLRm4Do: "/whatsapp-image-20231206-at-094016-8856d3bf@2x.png",
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}whatsapp-image-20231206-at-094016-8856d3bf@2x.png`,
       productAdminDashboard: "Analog Function Generator",
       vivamusEleifendConvallisAnte:
         "An analog function generator that generates sinusoidal, triangular, sawtooth, and PWM signals up to 20kHz with variable parameters. We designed it using analog components, which feature versatile waveform options, and easy signal output.",
       linkaddress: "https://github.com/OhmFusion/Analog-Function-Generator",
     },
     {
-      unsplashSavQfLRm4Do: "/image-2@2x.png",
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}image-2@2x.png`,
       productAdminDashboard: "HydroLink 2.0",
       vivamusEleifendConvallisAnte:
         "An IoT device plugged into any domestic water tank checks the water level and sends it to Firebase. The water level can be monitored with a custom-made app, and the user can control the water level from the app.",
       linkaddress: "https://hydrolink.lk/",
     },
     {
-      unsplashSavQfLRm4Do: "/unsplashm-hrflhgabo@2x.png",
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}unsplashm-hrflhgabo@2x.png`,
       productAdminDashboard: "IoT Medicine Storage Box",
       vivamusEleifendConvallisAnte:
         "A medicine storage box that provides medicine time alerts, keeps the medicine in proper sunlight and monitors the temperature and humidity.",
       linkaddress: "https://github.com/lasithhaputhanthri/Medi-Box",
     },
     {
-      unsplashSavQfLRm4Do: "/image-3@2x.png",
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}image-3@2x.png`,
       productAdminDashboard: "REPLACE: A Smart and Intelligent Wall Socket",
       vivamusEleifendConvallisAnte:
         "A smart wall socket that can detect anomalies in the domestic power grid. With a mobile app, the user can monitor power consumption and cost, and control the socket.",
       linkaddress: "https://github.com/AuraLabs-main/AuraLabs-Replace-working",
     },
     {
-      unsplashSavQfLRm4Do: "/whatsapp-image-20240415-at-133421-bb3fc5ec@2x.png",
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}whatsapp-image-20240415-at-133421-bb3fc5ec@2x.png`,
       productAdminDashboard: "StearSafe",
       vivamusEleifendConvallisAnte:
         "A spectacle frame and smartwatch that collect EOG data, measure the drowsiness of the user, and give alerts.",
       linkaddress: "https://github.com/PulseX-Solutions/Stear_Safe",
     },
     {
-      unsplashSavQfLRm4Do: "/whatsapp-image-20240401-at-080219-21257bad@2x.png",
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}whatsapp-image-20240401-at-080219-21257bad@2x.png`,
       productAdminDashboard: "LUNA: Vision-based Automated Restaurant Robot",
       vivamusEleifendConvallisAnte:
         "Developing a restaurant robot using ROS and Kinect2, equipped with a Kalman-filter-based food stabilization tray to avoid beverage spillage. The robot enhances efficiency in restaurant environments with advanced sensor technologies and robotic functionalities, including a custom restaurant environment planner front-end.",

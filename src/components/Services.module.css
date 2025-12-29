@@ -1,0 +1,130 @@
+/* Base Styles */
+.whatIDo {
+  align-self: stretch;
+  background-color: var(--gray-50);
+  padding: 120px var(--padding-xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--heading-01-size);
+  color: var(--color-darkslategray-100);
+  font-family: var(--body-regular-400);
+
+  /* Flex Container */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 80px;
+  max-width: 100%;
+}
+
+.whatIDo1 {
+  margin: 0;
+  position: relative;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.servicesDescription {
+  flex: 0 0 400px;
+  /* Fixed width for description on desktop */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* padding-top: 20px; */
+}
+
+.myWorkSpans {
+  line-height: 1.6;
+  font-size: 1.125rem;
+  color: var(--gray-600);
+}
+
+.whatIDoCards {
+  flex: 1;
+  /* Take remaining space */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Responsive Grid */
+  gap: 24px;
+  max-width: 800px;
+}
+
+.whatIDoCard {
+  background-color: var(--gray-white);
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.whatIDoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.serviceImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: var(--primary-500);
+}
+
+.userExperienceUx {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.loremIpsumDolor {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--gray-600);
+}
+
+/* Responsive Media Queries */
+
+@media screen and (max-width: 1024px) {
+  .whatIDo {
+    flex-direction: column;
+    padding: 80px 20px;
+    gap: 60px;
+  }
+
+  .servicesDescription {
+    width: 100%;
+    flex: none;
+    align-items: center;
+    text-align: center;
+  }
+
+  .whatIDoCards {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .whatIDo {
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .whatIDo1 {
+    font-size: 2.25rem;
+  }
+
+  .whatIDoCards {
+    grid-template-columns: 1fr;
+    /* Stack cards */
+  }
+}

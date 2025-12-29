@@ -5,6 +5,7 @@ export type WorkProcessCardType = {
   className?: string;
   showFrameDiv?: boolean;
   research?: string;
+  description?: string; // New prop for content
   showLoremIpsumDolor?: boolean;
 
   /** Style props */
@@ -30,11 +31,12 @@ const WorkProcessCard: FunctionComponent<WorkProcessCardType> = ({
   propFlexDirection,
   propBoxShadow,
   propBackgroundColor,
-  showFrameDiv,
+  showFrameDiv = true,
   propWidth,
   propFlexDirection1,
   propFlex1,
   research,
+  description, // Destructure new prop
   propDisplay,
   propMinWidth,
   propHeight1,
@@ -89,7 +91,7 @@ const WorkProcessCard: FunctionComponent<WorkProcessCardType> = ({
         <img
           className={styles.deviceComputer}
           alt=""
-          src="/device--computer.svg"
+          src={`${import.meta.env.BASE_URL}device--computer.svg`}
         />
       </div>
       {showFrameDiv && (
@@ -101,7 +103,9 @@ const WorkProcessCard: FunctionComponent<WorkProcessCardType> = ({
             <div
               className={styles.loremIpsumDolor}
               style={loremIpsumDolorStyle}
-            />
+            >
+              {description || "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+            </div>
           )}
         </div>
       )}

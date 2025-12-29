@@ -1,12 +1,12 @@
 import { FunctionComponent } from "react";
 import Project from "./Project";
-import styles from "./Archevements.module.css";
+import styles from "./Achievements.module.css";
 
-export type ArchevementsType = {
+export type AchievementsType = {
   className?: string;
 };
 
-const Archevements: FunctionComponent<ArchevementsType> = ({
+const Achievements: FunctionComponent<AchievementsType> = ({
   className = "",
 }) => {
   return (
@@ -24,7 +24,7 @@ const Archevements: FunctionComponent<ArchevementsType> = ({
               propFlex="unset"
               propWidth="unset"
               propPadding="8px 0px 40px"
-              unsplashSavQfLRm4Do="/image@2x.png"
+              unsplashSavQfLRm4Do={`${import.meta.env.BASE_URL}image@2x.png`}
               propWidth1="unset"
               propMaxHeight="unset"
               propAlignSelf="stretch"
@@ -61,7 +61,7 @@ const Archevements: FunctionComponent<ArchevementsType> = ({
               propFlex="unset"
               propWidth="unset"
               propPadding="0px 0px 30px"
-              unsplashSavQfLRm4Do="/image-1@2x.png"
+              unsplashSavQfLRm4Do={`${import.meta.env.BASE_URL}image-1@2x.png`}
               propWidth1="unset"
               propMaxHeight="unset"
               propAlignSelf="stretch"
@@ -98,7 +98,7 @@ const Archevements: FunctionComponent<ArchevementsType> = ({
               propFlex="unset"
               propWidth="unset"
               propPadding="0px 0px 30px"
-              unsplashSavQfLRm4Do="/WhatsApp Image 2024-10-24 at 01.38.16_6d69c3d9.jpg"
+              unsplashSavQfLRm4Do={`${import.meta.env.BASE_URL}WhatsApp Image 2024-10-24 at 01.38.16_6d69c3d9.jpg`}
               propWidth1="unset"
               propMaxHeight="unset"
               propAlignSelf="stretch"
@@ -127,7 +127,7 @@ const Archevements: FunctionComponent<ArchevementsType> = ({
               propMinWidth3="74px"
               propColor="#a53dff"
               linkaddress="https://www.linkedin.com/posts/ieeesrilanka_ieee-ieeesl-challengesphere2024-activity-7265974873171083264-mtRM/?utm_source=share&utm_medium=member_desktop"
-              
+
             />
             <Project
               propMinWidth="unset"
@@ -136,7 +136,7 @@ const Archevements: FunctionComponent<ArchevementsType> = ({
               propFlex="unset"
               propWidth="unset"
               propPadding="0px 0px 30px"
-              unsplashSavQfLRm4Do="/whatsapp-image-20240819-at-164708-0e35114c@2x.png"
+              unsplashSavQfLRm4Do={`${import.meta.env.BASE_URL}whatsapp-image-20240819-at-164708-0e35114c@2x.png`}
               propWidth1="unset"
               propMaxHeight="unset"
               propAlignSelf="stretch"
@@ -164,7 +164,7 @@ const Archevements: FunctionComponent<ArchevementsType> = ({
               propDisplay2="inline-block"
               propMinWidth3="74px"
               propColor="#a53dff"
-              
+
             />
 
 
@@ -175,4 +175,4 @@ const Archevements: FunctionComponent<ArchevementsType> = ({
   );
 };
 
-export default Archevements;
+export default Achievements;

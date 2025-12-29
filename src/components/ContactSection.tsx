@@ -2,13 +2,13 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import AddressCard from "./AddressCard";
 import Button from "./Button";
-import styles from "./FrameComponent3.module.css";
+import styles from "./ContactSection.module.css";
 
-export type FrameComponent3Type = {
+export type ContactSectionType = {
   className?: string;
 };
 
-const FrameComponent3: React.FC<FrameComponent3Type> = ({
+const ContactSection: React.FC<ContactSectionType> = ({
   className = "",
 }) => {
   const form = useRef<HTMLFormElement>(null);
@@ -67,7 +67,7 @@ const FrameComponent3: React.FC<FrameComponent3Type> = ({
                 className={styles.image15Icon}
                 loading="lazy"
                 alt=""
-                src="/image-15@2x.png"
+                src={`${import.meta.env.BASE_URL}image-15@2x.png`}
               />
             </a>
             <a href="https://web.facebook.com/people/Lasith-Haputhanthri/pfbid02uBjtG1JRgk59SFYwnEUXwyYvz1ZBt7fgFXmadJZVbQpPFEZzUmFHwSurrssL9Pffl/" target="_blank" rel="noopener noreferrer">
@@ -76,18 +76,18 @@ const FrameComponent3: React.FC<FrameComponent3Type> = ({
                   className={styles.socialIcon}
                   loading="lazy"
                   alt=""
-                  src="/social.svg"
+                  src={`${import.meta.env.BASE_URL}social.svg`}
                 />
               </div>
             </a>
             <a href="https://www.instagram.com/lasithhaputhanthri/?igsh=MWd4YTVsdjNvY3U3OA%3D%3D" target="_blank" rel="noopener noreferrer">
               <div className={styles.socialMediaCard1}>
-                <img className={styles.socialIcon1} alt="" src="/social-1.svg" />
+                <img className={styles.socialIcon1} alt="" src={`${import.meta.env.BASE_URL}social-1.svg`} />
               </div>
             </a>
             <a href="https://www.linkedin.com/in/lasith-haputhanthri-b2919a265/" target="_blank" rel="noopener noreferrer">
               <div className={styles.socialMediaCard1}>
-                <img className={styles.socialIcon1} alt="" src="/social-2.svg" />
+                <img className={styles.socialIcon1} alt="" src={`${import.meta.env.BASE_URL}social-2.svg`} />
               </div>
             </a>
             <a href="https://github.com/lasithhaputhanthri" target="_blank" rel="noopener noreferrer">
@@ -95,7 +95,7 @@ const FrameComponent3: React.FC<FrameComponent3Type> = ({
                 className={styles.image17Icon}
                 loading="lazy"
                 alt=""
-                src="/image-17@2x.png"
+                src={`${import.meta.env.BASE_URL}image-17@2x.png`}
               />
             </a>
           </div>
@@ -131,14 +131,14 @@ const FrameComponent3: React.FC<FrameComponent3Type> = ({
                 <div className={styles.emailChild} />
               </div>
               <div className={styles.name}>
-                  <input
-                    className={styles.name1}
-                    placeholder="Subject*"
-                    name="subject"
-                    type="text"
-                  />
-                  <div className={styles.emailChild} />
-                
+                <input
+                  className={styles.name1}
+                  placeholder="Subject*"
+                  name="subject"
+                  type="text"
+                />
+                <div className={styles.emailChild} />
+
               </div>
               <div className={styles.message}>
                 <input
@@ -158,4 +158,4 @@ const FrameComponent3: React.FC<FrameComponent3Type> = ({
   );
 };
 
-export default FrameComponent3;
+export default ContactSection;

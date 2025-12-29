@@ -50,7 +50,7 @@ const AddressCard: FunctionComponent<AddressCardType> = ({
         <img
           className={styles.locationAndMapLocationPi}
           alt=""
-          src="/location-and-map--location-pin.svg"
+          src={`${import.meta.env.BASE_URL}location-and-map--location-pin.svg`}
         />
       </div>
       <div className={styles.addressParent}>

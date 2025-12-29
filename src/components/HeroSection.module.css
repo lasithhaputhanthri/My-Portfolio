@@ -1,0 +1,261 @@
+/* Basic styling */
+.helloImLasithContainer {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/* Typewriter effects preserved but simplified for brevity */
+.typewriter {
+  color: var(--primary-500);
+  /* Optional: make the name pop */
+}
+
+.cursor {
+  display: inline-block;
+  font-weight: 100;
+  animation: blink 1s step-end infinite;
+  color: var(--gray-900);
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/* Image styling - Removed Absolute Formatting */
+/* Image styling */
+.unsplashwkokidnt14wIcon {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+/* Content Containers */
+.heroContent {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  /* Side by side on Desktop */
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  z-index: 2;
+}
+
+.heroLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  min-width: 300px;
+}
+
+.heroRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.helloImLasithContainer {
+  margin: 0;
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.2;
+}
+
+.passionateEngineeringStudent {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--gray-600);
+  width: 100%;
+  white-space: normal;
+  /* Fix wrapping */
+}
+
+.heroInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.button1 {
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--gray-white);
+  text-align: center;
+}
+
+/* Hero Actions (Buttons) */
+.heroActions {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.button,
+.button2 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.button {
+  background-color: var(--primary-500);
+  color: white;
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--color-darkorchid-100);
+}
+
+.arrowsDownload {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 24px;
+}
+
+.button2 {
+  background-color: transparent;
+  color: var(--gray-900);
+  border: 1px solid transparent;
+}
+
+.button2:hover {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+/* Main Wrapper - Flex Container */
+.heroContentWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* Center content */
+  width: 100%;
+  /* Changed from fixed 1320px */
+  max-width: 1400px;
+  margin: 0 auto;
+  /* Center horizontally */
+  padding: 120px var(--padding-xl) 60px;
+  /* Added top padding for fixed header */
+  box-sizing: border-box;
+  min-height: 100vh;
+  /* Fill screen height */
+  gap: 40px;
+  font-family: var(--body-regular-400);
+  color: var(--gray-900);
+}
+
+/* Responsive Breakpoints */
+
+/* Tablet Portrait & Mobile */
+/* Tablet Portrait & Mobile */
+@media screen and (max-width: 1024px) {
+  .heroContent {
+    flex-direction: column-reverse;
+    /* Stack: Image top (or bottom?) usually image top on mobile -> Column. If we want text top, use column. User asked for desktop layout specifically, assuming mobile is standard stack. Let's do Text Top, Image Bottom for standard portfolio flow, or Image Top. Let's stick to column (Text Top) as per typical design, or column-reverse if image should be first. 
+    Actually, standard is Image Top on mobile usually. 
+    Let's use column-reverse to put Image on Top, Text Below? 
+    Or just column (Text Top). 
+    Let's stick to column for now (Text First). 
+    Wait, original request "image should be in the right side and the text should be in left side" for BIG screens.
+    */
+    flex-direction: column-reverse;
+    /* Let's put image on top for mobile personality? Or text? 
+    Let's go with column (Text Top) to match the HTML order (Left=Text, Right=Image). 
+    If we want Image Top on Mobile, we need column-reverse. 
+    Let's do column-reverse so Image is first seen on mobile! */
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .heroLeft {
+    align-items: center;
+    width: 100%;
+  }
+
+  .heroRight {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .introduction,
+  .heroInfo {
+    align-items: center;
+  }
+
+  .heroActions {
+    justify-content: center;
+  }
+
+  .unsplashwkokidnt14wIcon {
+    width: 100%;
+    max-width: 350px;
+    /* Smaller image on mobile */
+  }
+
+  .helloImLasithContainer {
+    font-size: 2.5rem;
+    /* readable on tablet */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .helloImLasithContainer {
+    font-size: 2.5rem;
+    /* Smaller font on mobile */
+  }
+
+  .heroContentWrapper {
+    padding: 80px 20px 40px;
+  }
+
+  .heroActions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button,
+  .button2 {
+    width: 100%;
+  }
+}
