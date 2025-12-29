@@ -7,6 +7,7 @@
   font-family: inherit;
   display: inline-block;
   min-width: 16px;
+  color: var(--text-on-primary);
 }
 
 .logoName {
