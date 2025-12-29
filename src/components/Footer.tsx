@@ -18,7 +18,7 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
           propMargin="unset"
           propMinWidth="28px"
           propTextDecoration="none"
-          //brooklyn="Lasith Haputhanthri"
+          brooklyn="Lasith Haputhanthri"
           propColor="var(--gray-900)"
         />
         <div className={styles.siteLinks}>

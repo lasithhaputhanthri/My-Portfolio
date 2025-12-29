@@ -257,8 +257,11 @@ html {
   padding: 100px 20px;
   gap: 40px;
   text-align: center;
-  color: var(--gray-white);
+  color: #ffffff;
   box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .doYouHaveContainer {

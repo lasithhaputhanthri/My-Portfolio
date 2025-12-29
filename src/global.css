@@ -143,8 +143,8 @@ body {
 
 [data-theme='dark'] {
   --bg-body: #000000;
-  --cta-bg: #1a1a1a;
-  --gray-white: rgba(255, 255, 255, 0.03);
+  --cta-bg: rgba(255, 255, 255, 0.05);
+  --gray-white: rgba(2, 2, 43, 0);
   /* Glassy background for cards */
   --color-darkslategray-100: #e0e0e0;
   --gray-900: #ffffff;
@@ -168,6 +168,8 @@ body {
   --card-border: 1px solid rgba(255, 255, 255, 0.1);
   --card-backdrop: blur(12px);
   --card-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  --see-more-text: #ffffff;
+  --card-bg: #1a1a1a;
 }
 
 /* Mobile responsive typography */

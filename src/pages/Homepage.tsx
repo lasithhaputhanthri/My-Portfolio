@@ -29,13 +29,13 @@ const Homepage: FunctionComponent = () => {
       <div id="PCBGallery" style={{ width: '100%' }}>
         <PCBGallery />
       </div>
-      <div id="WorkProcessCard" style={{ width: '100%' }}>
+      {/* <div id="WorkProcessCard" style={{ width: '100%' }}>
         <div className={styles.workProcess}>
           <h1 className={styles.tools}>Tools & Workflow</h1>
           <div className={styles.processContent}>
-            <div className={styles.processSteps}>
-              {/* Card 1: EDA Tools */}
-              <div className={styles.workProcessCardParent}>
+            <div className={styles.processSteps}> */}
+      {/* Card 1: EDA Tools */}
+      {/* <div className={styles.workProcessCardParent}>
                 <WorkProcessCard
                   research="1. Research"
                   showLoremIpsumDolor={true}
@@ -47,10 +47,10 @@ const Homepage: FunctionComponent = () => {
                   <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-5@2x.png`} />
                   <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-6@2x.png`} />
                 </div>
-              </div>
+              </div> */}
 
-              {/* Card 2: 3D Modeling */}
-              <div className={styles.workProcessCardGroup}>
+      {/* Card 2: 3D Modeling */}
+      {/* <div className={styles.workProcessCardGroup}>
                 <WorkProcessCard
                   research="3D Modeling and 3D printing"
                   showLoremIpsumDolor={true}
@@ -61,10 +61,10 @@ const Homepage: FunctionComponent = () => {
                   <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-8@2x.png`} />
                   <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-9@2x.png`} />
                 </div>
-              </div>
+              </div> */}
 
-              {/* Card 3: Electronics */}
-              <div className={styles.workProcessCardContainer}>
+      {/* Card 3: Electronics */}
+      {/* <div className={styles.workProcessCardContainer}>
                 <WorkProcessCard
                   research="Electronics"
                   showLoremIpsumDolor={true}
@@ -75,10 +75,10 @@ const Homepage: FunctionComponent = () => {
                   <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-11@2x.png`} />
                   <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-12@2x.png`} />
                 </div>
-              </div>
+              </div> */}
 
-              {/* Card 4: Programming */}
-              <div className={styles.workProcessCardGroup}>
+      {/* Card 4: Programming */}
+      {/* <div className={styles.workProcessCardGroup}>
                 <WorkProcessCard
                   research="Programming"
                   showLoremIpsumDolor={true}
@@ -89,11 +89,11 @@ const Homepage: FunctionComponent = () => {
                   <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-14@2x.png`} />
                   <img className={styles.toolIcon} alt="" src={`${import.meta.env.BASE_URL}image-15@2x.png`} />
                 </div>
-              </div>
-            </div>
+              </div> */}
+      {/* </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div id="Services" style={{ width: '100%' }}>
         <div className={styles.callToAction}>
           <h1 className={styles.doYouHaveContainer}>
