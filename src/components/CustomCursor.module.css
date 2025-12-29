@@ -1,29 +1,25 @@
-.cursorMain {
+.smoke {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 32px;
-    height: 32px;
-    border: 1.5px solid var(--primary-500);
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
-    transform: translate(-50%, -50%);
-    transition: width 0.3s, height 0.3s, background-color 0.3s;
-    box-sizing: border-box;
+    animation: smokeAnimation 1s ease-out forwards;
     mix-blend-mode: difference;
-    /* Optional: makes it visible on all backgrounds */
+    /* Makes it visible on light/dark backgrounds */
 }
 
-.cursorDot {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 8px;
-    height: 8px;
-    background-color: var(--primary-500);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
+@keyframes smokeAnimation {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -150px) scale(3);
+        /* Float up and expand */
+    }
 }

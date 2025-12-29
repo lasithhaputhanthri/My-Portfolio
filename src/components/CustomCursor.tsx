@@ -1,28 +1,27 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 import styles from "./CustomCursor.module.css";
 
 const CustomCursor = () => {
-    const cursorRef = useRef<HTMLDivElement>(null);
-    const dotRef = useRef<HTMLDivElement>(null);
-    const [position, setPosition] = useState({ x: 0, y: 0 });
-
     useEffect(() => {
         const handleMouseMove = (e: MouseEvent) => {
-            // Direct update for the dot (instant follow)
-            if (dotRef.current) {
-                dotRef.current.style.left = `${e.clientX}px`;
-                dotRef.current.style.top = `${e.clientY}px`;
-            }
+            // Create smoke particle
+            const smoke = document.createElement("div");
+            smoke.classList.add(styles.smoke);
 
-            // Update state for the main cursor (will lag slightly via CSS or RAF if implemented)
-            // For now, let's keep it simple CSS transition or simple state update
-            // State update might be too slow/jagged for high refresh, using ref manipulation is better
-            if (cursorRef.current) {
-                // Add a small delay effect via CSS transition or requestAnimationFrame for smoother feel
-                // For this implementation, we'll direct update but the CSS has 'transition' property which might help
-                cursorRef.current.style.left = `${e.clientX}px`;
-                cursorRef.current.style.top = `${e.clientY}px`;
-            }
+            // Position at mouse coordinates
+            smoke.style.left = `${e.clientX}px`;
+            smoke.style.top = `${e.clientY}px`;
+
+            // Add random horizontal offset for more natural smoke variability
+            const randomX = (Math.random() - 0.5) * 10;
+            smoke.style.left = `${e.clientX + randomX}px`;
+
+            document.body.appendChild(smoke);
+
+            // Clean up after animation finishes (1s matches CSS animation)
+            setTimeout(() => {
+                smoke.remove();
+            }, 1000);
         };
 
         window.addEventListener("mousemove", handleMouseMove);
@@ -32,12 +31,7 @@ const CustomCursor = () => {
         };
     }, []);
 
-    return (
-        <>
-            <div ref={cursorRef} className={styles.cursorMain} />
-            <div ref={dotRef} className={styles.cursorDot} />
-        </>
-    );
+    return null; // The component itself renders nothing, only manages DOM nodes
 };
 
 export default CustomCursor;
