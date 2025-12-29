@@ -121,6 +121,7 @@ body {
   --br-3xs: 10px;
   --footer-text: var(--gray-50);
   --bg-body: #ffffff;
+  --cta-bg: #132238;
 }
 
 /* Mobile-first responsive improvements */
@@ -142,6 +143,7 @@ body {
 
 [data-theme='dark'] {
   --bg-body: #000000;
+  --cta-bg: #1a1a1a;
   --gray-white: rgba(255, 255, 255, 0.03);
   /* Glassy background for cards */
   --color-darkslategray-100: #e0e0e0;
