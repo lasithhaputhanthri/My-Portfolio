@@ -1,6 +1,6 @@
 /* General link styles */
 a {
-  color: #000;
+  color: var(--color-darkslategray-100);
   text-decoration: none;
 }
 
@@ -20,7 +20,10 @@ a:hover {
 
 .logoParent {
   flex: 1;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: var(--header-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   justify-content: space-between;
   padding: var(--padding-xl) var(--padding-xl);
   top: 0;

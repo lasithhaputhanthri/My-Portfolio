@@ -5,15 +5,18 @@
   justify-content: center;
   padding: 80px 20px;
   box-sizing: border-box;
-  background-color: #fafafa;
+  background-color: var(--gray-50);
 }
 
 .contact {
   width: 100%;
   max-width: 1200px;
   background-color: var(--gray-white);
+  backdrop-filter: var(--card-backdrop);
+  -webkit-backdrop-filter: var(--card-backdrop);
+  border: var(--card-border);
   border-radius: 16px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--card-shadow);
   display: flex;
   flex-direction: row;
   padding: 60px;
