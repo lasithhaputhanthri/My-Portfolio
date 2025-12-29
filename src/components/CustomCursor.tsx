@@ -12,13 +12,17 @@ const CustomCursor = () => {
             smoke.style.left = `${e.clientX}px`;
             smoke.style.top = `${e.clientY}px`;
 
-            // Add random horizontal offset for more natural smoke variability
-            const randomX = (Math.random() - 0.5) * 10;
-            smoke.style.left = `${e.clientX + randomX}px`;
+            // Random physics values
+            const tx = (Math.random() - 0.5) * 100; // Random horizontal drift (-50px to 50px)
+            const tr = Math.random() * 360; // Random rotation (0 to 360deg)
+
+            // Set CSS variables for the animation
+            smoke.style.setProperty('--tx', `${tx}px`);
+            smoke.style.setProperty('--tr', `${tr}deg`);
 
             document.body.appendChild(smoke);
 
-            // Clean up after animation finishes (1s matches CSS animation)
+            // Clean up after animation finishes
             setTimeout(() => {
                 smoke.remove();
             }, 1000);
@@ -31,7 +35,7 @@ const CustomCursor = () => {
         };
     }, []);
 
-    return null; // The component itself renders nothing, only manages DOM nodes
+    return null;
 };
 
 export default CustomCursor;
