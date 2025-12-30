@@ -30,11 +30,11 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
           propColor="var(--gray-900)"
         />
         <div className={styles.siteLinks}>
-          <a href="#FrameComponent1" className={styles.linkItems}>
+          <a href="#HeroSection" className={styles.linkItems}>
             <RiHomeLine className={styles.footerIcon} />
             <span className={styles.footerText}>Home</span>
           </a>
-          <a href="#Archevements" className={styles.linkItems}>
+          <a href="#Achievements" className={styles.linkItems}>
             <RiTrophyLine className={styles.footerIcon} />
             <span className={styles.footerText}>Awards</span>
           </a>
@@ -46,11 +46,11 @@ const Footer: FunctionComponent<FooterType> = ({ className = "" }) => {
             <RiToolsLine className={styles.footerIcon} />
             <span className={styles.footerText}>Tools</span>
           </a>
-          <a href="#WhatIDo" className={styles.linkItems}>
+          <a href="#Services" className={styles.linkItems}>
             <RiLightbulbLine className={styles.footerIcon} />
             <span className={styles.footerText}>My Interests</span>
           </a>
-          <a href="#FrameComponent3" className={styles.linkItems}>
+          <a href="#ContactSection" className={styles.linkItems}>
             <RiMailSendLine className={styles.footerIcon} />
             <span className={styles.footerText}>Contact</span>
           </a>
