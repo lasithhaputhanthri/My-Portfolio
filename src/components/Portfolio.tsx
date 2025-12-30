@@ -44,7 +44,7 @@ const Portfolio: FunctionComponent<PortfolioType> = ({ className = "" }) => {
       unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}whatsapp-image-20240401-at-080219-21257bad@2x.png`,
       productAdminDashboard: "LUNA: Vision-based Automated Restaurant Robot",
       vivamusEleifendConvallisAnte:
-        "Developing a restaurant robot using ROS and Kinect2, equipped with a Kalman-filter-based food stabilization tray to avoid beverage spillage. The robot enhances efficiency in restaurant environments with advanced sensor technologies and robotic functionalities, including a custom restaurant environment planner front-end.",
+        "Developed a restaurant robot using ROS and Kinect2, equipped with a Kalman-filter-based food stabilization tray to avoid beverage spillage. The robot enhances efficiency in restaurant environments with advanced sensor technologies and robotic functionalities, including a custom restaurant environment planner front-end.",
       linkaddress: "https://github.com/LUNA-Vision-based-Restaurant-Robot",
     },
     {
