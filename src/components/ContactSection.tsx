@@ -19,7 +19,7 @@ const ContactSection: React.FC<ContactSectionType> = ({
 
     emailjs
       .sendForm(
-        "service_jv32els",    // Your EmailJS service ID
+        "service_2mzn6as",    // Your EmailJS service ID
         "template_8o4uq9r",   // Your EmailJS template ID
         form.current!,
         "IWfuOGj5JdGc6sXjy"        // Replace this with your EmailJS user ID
