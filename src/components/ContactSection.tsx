@@ -1,6 +1,7 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { RiMailFill } from "react-icons/ri";
 import emailjs from "emailjs-com";
+import ReCAPTCHA from "react-google-recaptcha";
 import AddressCard from "./AddressCard";
 import Button from "./Button";
 import styles from "./ContactSection.module.css";
@@ -13,9 +14,16 @@ const ContactSection: React.FC<ContactSectionType> = ({
   className = "",
 }) => {
   const form = useRef<HTMLFormElement>(null);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const [recaptchaValue, setRecaptchaValue] = useState<string | null>(null);
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!recaptchaValue) {
+      alert("Please verify you are human!");
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -28,6 +36,8 @@ const ContactSection: React.FC<ContactSectionType> = ({
         (result) => {
           console.log(result.text);
           form.current?.reset(); // Clear the form
+          recaptchaRef.current?.reset(); // Reset ReCAPTCHA
+          setRecaptchaValue(null);
           alert("Email sent successfully!");
         },
         (error) => {
@@ -148,6 +158,13 @@ const ContactSection: React.FC<ContactSectionType> = ({
                   type="text"
                 />
                 <div className={styles.emailChild} />
+              </div>
+              <div className={styles.name}>
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" // Test Site Key
+                  onChange={(value) => setRecaptchaValue(value)}
+                />
               </div>
             </div>
             <Button letsWorkTogether="Submit" />
