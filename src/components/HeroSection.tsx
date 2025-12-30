@@ -54,10 +54,9 @@ const HeroSection: FunctionComponent<HeroSectionType> = ({
 
             </div>
             <div className={styles.passionateEngineeringStudent}>
-              Passionate engineering student with a strong foundation in
-              electronics and hands-on experience in designing and developing
-              innovative solutions. Eager to apply my skills and contribute to
-              impactful projects in a dynamic environment.
+              Undergraduate Electronics Engineer with experience in embedded programming, RF electronics, and digital
+              hardware design. Skilled in microcontrollers, embedded C/C++, circuit analysis, and hardware debugging. Familiar with sensors, communication interfaces, and RF concepts. Strong foundation in Electronics Engineering
+              principles
             </div>
           </div>
           <div className={styles.heroActions}>

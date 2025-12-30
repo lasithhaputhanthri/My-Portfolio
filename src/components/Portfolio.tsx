@@ -7,30 +7,32 @@ export type PortfolioType = {
 };
 
 const Portfolio: FunctionComponent<PortfolioType> = ({ className = "" }) => {
-  const [visibleProjects, setVisibleProjects] = useState(3); // Initially show 3 projects
+  const [visibleProjects, setVisibleProjects] = useState(6); // Initially show 3 projects
 
   const projects = [
     {
-      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}whatsapp-image-20231206-at-094016-8856d3bf@2x.png`,
-      productAdminDashboard: "Analog Function Generator",
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}WhatsApp Image 2025-12-20 at 14.19.41.jpeg`,
+      productAdminDashboard: "uUAS Detection in 6G band & mmWaves(Ongoing FYP)",
       vivamusEleifendConvallisAnte:
-        "An analog function generator that generates sinusoidal, triangular, sawtooth, and PWM signals up to 20kHz with variable parameters. We designed it using analog components, which feature versatile waveform options, and easy signal output.",
-      linkaddress: "https://github.com/OhmFusion/Analog-Function-Generator",
+        "Designing a CW radar system from scratch for drone detection, including RF front-end and signal processing. Integrated an FMCW radar evaluation board for range and velocity estimation, focusing on practical radar detection techniques and real-world interference handling",
+      linkaddress: "https://github.com/Drone-Detection-FYP",
     },
     {
-      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}image-2@2x.png`,
-      productAdminDashboard: "HydroLink 2.0",
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}Gemini_Generated_Image_4vn08q4vn08q4vn0.png`,
+      productAdminDashboard: "Echo-watt: Inverter Power Monitoring Device",
       vivamusEleifendConvallisAnte:
-        "An IoT device plugged into any domestic water tank checks the water level and sends it to Firebase. The water level can be monitored with a custom-made app, and the user can control the water level from the app.",
-      linkaddress: "https://hydrolink.lk/",
+        "Implemented a microcontroller-based embedded system that polls inverter parameters, buffers and compresses data, and uploads securely to the cloud on a constrained schedule. The system supports remote configuration, fault handling, and firmware-over-the-air (FOTA) updates",
+      linkaddress: "https://github.com/Team-Saturated/Eco-watt/tree/M5_Yasiru_new",
     },
+
     {
-      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}unsplashm-hrflhgabo@2x.png`,
-      productAdminDashboard: "IoT Medicine Storage Box",
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}Screenshot 2025-12-31 004958.png`,
+      productAdminDashboard: "StearSafe",
       vivamusEleifendConvallisAnte:
-        "A medicine storage box that provides medicine time alerts, keeps the medicine in proper sunlight and monitors the temperature and humidity.",
-      linkaddress: "https://github.com/lasithhaputhanthri/Medi-Box",
+        "Smart Spectacle frame and smartwatch that collect EOG data to predict driver’s sleepiness using Machine Learning and alert the driver before an accident occurs. The spectacles and smartwatch communicate with the Raspberry Pi using NRF. The design includes Hi-density 6-layer and 4-layer PCBs with Inverted F antenna.",
+      linkaddress: "https://github.com/PulseX-Solutions/Stear_Safe",
     },
+
     {
       unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}image-3@2x.png`,
       productAdminDashboard: "REPLACE: A Smart and Intelligent Wall Socket",
@@ -39,18 +41,32 @@ const Portfolio: FunctionComponent<PortfolioType> = ({ className = "" }) => {
       linkaddress: "https://github.com/AuraLabs-main/AuraLabs-Replace-working",
     },
     {
-      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}whatsapp-image-20240415-at-133421-bb3fc5ec@2x.png`,
-      productAdminDashboard: "StearSafe",
-      vivamusEleifendConvallisAnte:
-        "A spectacle frame and smartwatch that collect EOG data, measure the drowsiness of the user, and give alerts.",
-      linkaddress: "https://github.com/PulseX-Solutions/Stear_Safe",
-    },
-    {
       unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}whatsapp-image-20240401-at-080219-21257bad@2x.png`,
       productAdminDashboard: "LUNA: Vision-based Automated Restaurant Robot",
       vivamusEleifendConvallisAnte:
         "Developing a restaurant robot using ROS and Kinect2, equipped with a Kalman-filter-based food stabilization tray to avoid beverage spillage. The robot enhances efficiency in restaurant environments with advanced sensor technologies and robotic functionalities, including a custom restaurant environment planner front-end.",
       linkaddress: "https://github.com/LUNA-Vision-based-Restaurant-Robot",
+    },
+    {
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}image-2@2x.png`,
+      productAdminDashboard: "HydroLink 2.0",
+      vivamusEleifendConvallisAnte:
+        "An IoT device plugged into any domestic water tank checks the water level and sends it to Firebase. The water level can be monitored with a custom-made app, and the user can control the water level from the app.",
+      linkaddress: "https://hydrolink.auradigitallabs.com/",
+    },
+    {
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}whatsapp-image-20231206-at-094016-8856d3bf@2x.png`,
+      productAdminDashboard: "Analog Function Generator",
+      vivamusEleifendConvallisAnte:
+        "An analog function generator that generates sinusoidal, triangular, sawtooth, and PWM signals up to 20kHz with variable parameters. We designed it using analog components, which feature versatile waveform options, and easy signal output.",
+      linkaddress: "https://github.com/OhmFusion/Analog-Function-Generator",
+    },
+    {
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}unsplashm-hrflhgabo@2x.png`,
+      productAdminDashboard: "IoT Medicine Storage Box",
+      vivamusEleifendConvallisAnte:
+        "A medicine storage box that provides medicine time alerts, keeps the medicine in proper sunlight and monitors the temperature and humidity.",
+      linkaddress: "https://github.com/lasithhaputhanthri/Medi-Box",
     },
   ];
 
@@ -110,7 +126,7 @@ const Portfolio: FunctionComponent<PortfolioType> = ({ className = "" }) => {
         </div>
       </div>
       {visibleProjects < projects.length && (
-        <a  className={styles.button} onClick={handleSeeMore}>
+        <a className={styles.button} onClick={handleSeeMore}>
           <div className={styles.button1}>More Projects</div>
         </a>
       )}

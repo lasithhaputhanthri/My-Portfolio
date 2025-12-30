@@ -8,10 +8,31 @@ export type PCBGalleryType = {
 };
 
 const PCBGallery: FunctionComponent<PCBGalleryType> = ({ className = "" }) => {
-  const [visibleProjects, setVisibleProjects] = useState(3);
+  const [visibleProjects, setVisibleProjects] = useState(6);
   const [modalImage, setModalImage] = useState<string | null>(null);
 
   const projects = [
+
+    {
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}image (2).png`,
+      productAdminDashboard: "FYP Transmitter Antenna PCB",
+      vivamusEleifendConvallisAnte:
+        "This Teflon PCB is designed for capture 5.9GHz signals using series fed patch antenna with impedance matching and RF matching networks.",
+
+    },
+    {
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}image (3).png`,
+      productAdminDashboard: "FYP Receiver Antenna PCB",
+      vivamusEleifendConvallisAnte:
+        "This Teflon PCB is designed for Transmitter 5.9GHz signals using series fed patch antenna with impedance matching and RF matching networks.",
+    },
+    {
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}image (1).png`,
+      productAdminDashboard: "FYP Transceiver PCB",
+      vivamusEleifendConvallisAnte:
+        "This PCB is a 6 Layer FR4 PCB to get 5.9GHz signals and process through IQ demodulation and send the demodulated data to the Computer using ADCs.",
+
+    },
     {
       unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}ST_specs.png`,
       productAdminDashboard: "SteerSafe Spectacles PCB",
@@ -34,12 +55,20 @@ const PCBGallery: FunctionComponent<PCBGalleryType> = ({ className = "" }) => {
 
     },
     {
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}Screenshot 2025-12-31 010844.png`,
+      productAdminDashboard: "5.9GHz signal Attenuator Module",
+      vivamusEleifendConvallisAnte:
+        "This PCB is designed to attenuate 5.9GHz signals to desired level",
+
+    },
+    {
       unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}Annotation 2024-09-06 170740.png`,
       productAdminDashboard: "REPLACE: A Smart and Intelligent Wall Socket PCB",
       vivamusEleifendConvallisAnte:
         "REPLACE PCB is a 2-layer design for a smart wall socket, handling high voltage and current. It incorporates analog circuits for accurate voltage and current sensing, ensuring safe and efficient energy management.",
 
     },
+
     {
       unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}rat_full.png`,
       productAdminDashboard: "Ratatouille Maze Solving Robot PCB",
@@ -47,7 +76,13 @@ const PCBGallery: FunctionComponent<PCBGalleryType> = ({ className = "" }) => {
         "Ratatouille Maze Solving Robot PCB is a compact 2-layer design optimized for controlling a maze-solving robot, providing efficient performance and streamlined routing for robotic automation tasks.",
 
     },
+    {
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}Screenshot 2025-12-31 011445.png`,
+      productAdminDashboard: "Energy Harvesting using temperature PCB",
+      vivamusEleifendConvallisAnte:
+        "This PCB is designed to harvest energy using temperature difference. It use peltier element to convert temperature difference into electrical energy and saves in a battery.",
 
+    },
     {
       unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}photo_6244475496393982859_y.jpg`,
       productAdminDashboard: "HydroLink 2.0 PCB",

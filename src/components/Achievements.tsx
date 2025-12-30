@@ -17,6 +17,7 @@ const Achievements: FunctionComponent<AchievementsType> = ({
         </div>
         <div className={styles.projectCard}>
           <div className={styles.projectCard1}>
+
             <Project
               propMinWidth="unset"
               propHeight="unset"
@@ -24,7 +25,7 @@ const Achievements: FunctionComponent<AchievementsType> = ({
               propFlex="unset"
               propWidth="unset"
               propPadding="8px 0px 40px"
-              unsplashSavQfLRm4Do={`${import.meta.env.BASE_URL}image@2x.png`}
+              unsplashSavQfLRm4Do={`${import.meta.env.BASE_URL}WhatsApp Image 2025-12-28 at 13.27.35.jpeg`}
               propWidth1="unset"
               propMaxHeight="unset"
               propAlignSelf="stretch"
@@ -39,10 +40,10 @@ const Achievements: FunctionComponent<AchievementsType> = ({
               propWidth3="unset"
               propHeight2="unset"
               propMinWidth1="66px"
-              productAdminDashboard="SLIOT Challenge 2024: Champion"
+              productAdminDashboard="Silicon Pulse 2025: Champion"
               propDisplay="unset"
               propMinWidth2="unset"
-              vivamusEleifendConvallisAnte="HydroLink 2.0: An IoT device that can turn any domestic water tanks into smart ones."
+              vivamusEleifendConvallisAnte="A competition for designing and implementing the given task using only analog components without using outside resources."
               propWidth4="unset"
               propDisplay1="unset"
               propAlignSelf3="stretch"
@@ -52,7 +53,7 @@ const Achievements: FunctionComponent<AchievementsType> = ({
               propDisplay2="inline-block"
               propMinWidth3="74px"
               propColor="#a53dff"
-              linkaddress="https://www.linkedin.com/feed/update/urn:li:activity:7225137830237192192/"
+              linkaddress="https://www.facebook.com/story.php?story_fbid=1089812899610111&id=100057442329583"
             />
             <Project
               propMinWidth="unset"
@@ -165,6 +166,43 @@ const Achievements: FunctionComponent<AchievementsType> = ({
               propMinWidth3="74px"
               propColor="#a53dff"
 
+            />
+            <Project
+              propMinWidth="unset"
+              propHeight="unset"
+              propBoxShadow="0px 12px 64px rgba(28, 25, 25, 0.12)"
+              propFlex="unset"
+              propWidth="unset"
+              propPadding="8px 0px 40px"
+              unsplashSavQfLRm4Do={`${import.meta.env.BASE_URL}image@2x.png`}
+              propWidth1="unset"
+              propMaxHeight="unset"
+              propAlignSelf="stretch"
+              propHeight1="248px"
+              propOverflow="hidden"
+              propAlignSelf1="unset"
+              propWidth2="400px"
+              propPadding1="0px 20px"
+              propAlignSelf2="unset"
+              uIUXDESIGN="Champions"
+              uIUXDESIGN1
+              propWidth3="unset"
+              propHeight2="unset"
+              propMinWidth1="66px"
+              productAdminDashboard="SLIOT Challenge 2023: Champion"
+              propDisplay="unset"
+              propMinWidth2="unset"
+              vivamusEleifendConvallisAnte="HydroLink 2.0: Smart Water Tank Monitoring and controlling System."
+              propWidth4="unset"
+              propDisplay1="unset"
+              propAlignSelf3="stretch"
+              letsWorkTogether="See More"
+              propBorder="1px solid #a53dff"
+              propBackgroundColor="#fff"
+              propDisplay2="inline-block"
+              propMinWidth3="74px"
+              propColor="#a53dff"
+              linkaddress="https://www.linkedin.com/feed/update/urn:li:activity:7225137830237192192/"
             />
 
 
