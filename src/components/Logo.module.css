@@ -51,6 +51,8 @@
   .brooklyn {
     font-size: var(--font-size-7xl);
     line-height: 32px;
+    display: none;
+    /* Hide full name on smaller screens to prevent overlap */
   }
 
   .logo {
