@@ -20,14 +20,14 @@ const Homepage: FunctionComponent = () => {
       <div id="HeroSection" style={{ width: '100%' }}>
         <HeroSection />
       </div>
-      <div id="Achievements" style={{ width: '100%' }}>
-        <Achievements />
-      </div>
       <div id="Portfolio" style={{ width: '100%' }}>
         <Portfolio />
       </div>
       <div id="PCBGallery" style={{ width: '100%' }}>
         <PCBGallery />
+      </div>
+      <div id="Achievements" style={{ width: '100%' }}>
+        <Achievements />
       </div>
       {/* <div id="WorkProcessCard" style={{ width: '100%' }}>
         <div className={styles.workProcess}>
