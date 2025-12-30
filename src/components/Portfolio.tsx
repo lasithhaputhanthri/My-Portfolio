@@ -18,6 +18,13 @@ const Portfolio: FunctionComponent<PortfolioType> = ({ className = "" }) => {
       linkaddress: "https://github.com/Drone-Detection-FYP",
     },
     {
+      unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}unnamed.jpg`,
+      productAdminDashboard: "Employee Progress Tracking System (Internship Project at Magicbits)",
+      vivamusEleifendConvallisAnte:
+        "A System can track each employee work and the progress of each department.It used HMI devices with RFID sensors to collect employee data and visualize it in the ThingsBoard dashboard. Implemented the firmware for the HMI and tested in a Pilot Project with 20 devices in the field",
+      linkaddress: "",
+    },
+    {
       unsplashSavQfLRm4Do: `${import.meta.env.BASE_URL}Gemini_Generated_Image_4vn08q4vn08q4vn0.png`,
       productAdminDashboard: "Echo-watt: Inverter Power Monitoring Device",
       vivamusEleifendConvallisAnte:
