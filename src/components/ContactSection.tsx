@@ -14,8 +14,8 @@ const ContactSection: React.FC<ContactSectionType> = ({
   className = "",
 }) => {
   const form = useRef<HTMLFormElement>(null);
-  const turnstileRef = useRef<any>(null);
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+  const [resetKey, setResetKey] = useState(0);
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
@@ -36,10 +36,8 @@ const ContactSection: React.FC<ContactSectionType> = ({
         (result) => {
           console.log(result.text);
           form.current?.reset(); // Clear the form
-          if (turnstileRef.current) {
-            turnstileRef.current.reset();
-          }
           setTurnstileToken(null);
+          setResetKey(prev => prev + 1); // Force Turnstile component to remount/reset
           alert("Email sent successfully!");
         },
         (error) => {
@@ -163,7 +161,7 @@ const ContactSection: React.FC<ContactSectionType> = ({
               </div>
               <div className={styles.name}>
                 <Turnstile
-                  ref={turnstileRef}
+                  key={resetKey}
                   sitekey="1x00000000000000000000AA" // Test Site Key
                   onVerify={(token) => setTurnstileToken(token)}
                 />
