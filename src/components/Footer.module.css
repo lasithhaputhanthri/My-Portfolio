@@ -48,7 +48,7 @@
   padding: 8px 12px;
   gap: 8px;
   text-decoration: none;
-  color: white;
+  color: var(--footer-icon-color);
   /* Ensure text is white as per original design */
   transition: all 0.2s ease;
   border-radius: 8px;
@@ -101,20 +101,27 @@
 
 @media screen and (max-width: 768px) {
   .footerContent {
-    padding: 20px;
-    flex-direction: column;
-    gap: 20px;
+    padding: 10px 15px;
+    flex-direction: row;
+    /* Align Logo and Icons in one row */
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    /* Prevent wrapping generally */
   }
 
   .siteLinks {
-    gap: 10px;
+    gap: 8px;
+    /* Slightly tighter gap to ensure fit */
     width: 100%;
     justify-content: center;
+    flex-wrap: nowrap !important;
+    /* Force single row */
   }
 
   /* Mobile specific: Hide text, show icons only */
   .footerText {
-    display: none;
+    display: none !important;
   }
 
   .footerIcon {

@@ -122,6 +122,10 @@ body {
   --footer-text: var(--gray-50);
   --bg-body: #ffffff;
   --cta-bg: #132238;
+  --footer-bg: #ffffff;
+  /* Light mode footer background */
+  --footer-icon-color: #000000;
+  /* Light mode footer icons */
 }
 
 /* Mobile-first responsive improvements */
@@ -162,6 +166,8 @@ body {
   /* Semi-transparent black for header */
   --footer-bg: #000000;
   --footer-text: #e0e0e0;
+  --footer-icon-color: #ffffff;
+  /* Dark mode footer icons */
   --primary-500: #b844ff;
 
   /* Glassmorphism helpers */
