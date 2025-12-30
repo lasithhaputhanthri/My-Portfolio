@@ -162,7 +162,7 @@ const ContactSection: React.FC<ContactSectionType> = ({
               <div className={styles.name}>
                 <Turnstile
                   key={resetKey}
-                  sitekey="1x00000000000000000000AA" // Test Site Key
+                  sitekey="0x4AAAAAACJ1fdma52ih5YHM" // Your Cloudflare Turnstile Site Key
                   onVerify={(token) => setTurnstileToken(token)}
                 />
               </div>
