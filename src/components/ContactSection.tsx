@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { RiMailFill } from "react-icons/ri";
 import emailjs from "emailjs-com";
 import AddressCard from "./AddressCard";
 import Button from "./Button";
@@ -63,11 +64,9 @@ const ContactSection: React.FC<ContactSectionType> = ({
           </div>
           <div className={styles.socialMedia}>
             <a href="mailto:lasithnawanjana123@gmail.com" target="_blank" rel="noopener noreferrer">
-              <img
+              <RiMailFill
                 className={styles.image15Icon}
-                loading="lazy"
-                alt=""
-                src={`${import.meta.env.BASE_URL}image-15@2x.png`}
+                style={{ color: "var(--primary-500)", width: "32px", height: "32px" }}
               />
             </a>
             <a href="https://web.facebook.com/people/Lasith-Haputhanthri/pfbid02uBjtG1JRgk59SFYwnEUXwyYvz1ZBt7fgFXmadJZVbQpPFEZzUmFHwSurrssL9Pffl/" target="_blank" rel="noopener noreferrer">
