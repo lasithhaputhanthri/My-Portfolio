@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { RiMailFill } from "react-icons/ri";
 import emailjs from "emailjs-com";
-import ReCAPTCHA from "react-google-recaptcha";
+import Turnstile from "react-turnstile";
 import AddressCard from "./AddressCard";
 import Button from "./Button";
 import styles from "./ContactSection.module.css";
@@ -14,13 +14,13 @@ const ContactSection: React.FC<ContactSectionType> = ({
   className = "",
 }) => {
   const form = useRef<HTMLFormElement>(null);
-  const recaptchaRef = useRef<ReCAPTCHA>(null);
-  const [recaptchaValue, setRecaptchaValue] = useState<string | null>(null);
+  const turnstileRef = useRef<any>(null);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!recaptchaValue) {
+    if (!turnstileToken) {
       alert("Please verify you are human!");
       return;
     }
@@ -36,8 +36,10 @@ const ContactSection: React.FC<ContactSectionType> = ({
         (result) => {
           console.log(result.text);
           form.current?.reset(); // Clear the form
-          recaptchaRef.current?.reset(); // Reset ReCAPTCHA
-          setRecaptchaValue(null);
+          if (turnstileRef.current) {
+            turnstileRef.current.reset();
+          }
+          setTurnstileToken(null);
           alert("Email sent successfully!");
         },
         (error) => {
@@ -160,10 +162,10 @@ const ContactSection: React.FC<ContactSectionType> = ({
                 <div className={styles.emailChild} />
               </div>
               <div className={styles.name}>
-                <ReCAPTCHA
-                  ref={recaptchaRef}
-                  sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" // Test Site Key
-                  onChange={(value) => setRecaptchaValue(value)}
+                <Turnstile
+                  ref={turnstileRef}
+                  sitekey="1x00000000000000000000AA" // Test Site Key
+                  onVerify={(token) => setTurnstileToken(token)}
                 />
               </div>
             </div>
