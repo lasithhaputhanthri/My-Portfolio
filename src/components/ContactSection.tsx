@@ -27,6 +27,7 @@ const ContactSection: React.FC<ContactSectionType> = ({
       .then(
         (result) => {
           console.log(result.text);
+          form.current?.reset(); // Clear the form
           alert("Email sent successfully!");
         },
         (error) => {
