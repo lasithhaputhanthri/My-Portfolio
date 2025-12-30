@@ -53,11 +53,11 @@ const Header: FunctionComponent<HeaderType> = ({
             <RiLightbulbLine className={styles.navIcon} />
             <span className={styles.navText}>My Interests</span>
           </a>
-          <ThemeToggle />
           <a href="#ContactSection" className={styles.contactButton}>
             <span className={styles.navText}>Contact</span>
             <RiMailSendLine className={styles.navIcon} />
           </a>
+          <ThemeToggle />
         </div>
       </header>
     </div>
