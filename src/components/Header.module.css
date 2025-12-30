@@ -54,6 +54,37 @@ a:hover {
 }
 
 /* Navigation Links Container */
+/* Navigation Icons Default State (Desktop) */
+.navIcon {
+  font-size: 18px;
+  /* Slightly larger than text */
+  display: none;
+  /* By default hide icons on large desktop if not desired, OR display them. 
+                      Code style above adds icons. Let's SHOW them on desktop too for premium feel?
+                      Or hide them and only show on mobile? 
+                      "header should be in one row with small icons" - refers to mobile view.
+                      Let's show BOTH on desktop for now, or hide icons on desktop. 
+                      Let's hiding icons on desktop to keep it clean text defined by user previously?
+                      Actually, modern portfolios often use text. 
+                      Let's display: none for navIcon on desktop > 768px to stay safe with "clean" look, 
+                      unless user wants them. 
+                      Wait, "do not use the long texts" -> for mobile. 
+                      Let's hide icons on desktop and show text. 
+                      Swap to icons on mobile. 
+                      */
+  display: none;
+}
+
+/* But wait, I put the icons in the DOM. If I hide them, desktop is Text only. 
+     If I want "High Aesthetics", maybe Icon+Text is better? 
+     Let's adding a rule to show icons only on screens < 900px maybe?
+     Or let's show them all the time but make them subtle?
+     Let's try Showing them all the time.
+  */
+.navIcon {
+  display: block;
+}
+
 .navigation {
   display: flex;
   flex-direction: row;
@@ -61,7 +92,8 @@ a:hover {
   justify-content: flex-end;
   /* Align to right */
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  /* Prevent wrapping generally */
 }
 
 /* Link Styles */
@@ -93,9 +125,12 @@ a:hover {
   color: inherit;
   font-weight: 500;
   font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 4px;
-  transition: background-color 0.2s;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .navLinks:hover {
@@ -146,6 +181,7 @@ a:hover {
   font-size: var(--body-regular-400-size);
   transition: background-color 0.3s;
   text-decoration: none;
+  gap: 8px;
   color: var(--text-on-primary);
   font-weight: 600;
   font-family: var(--body-regular-400);
@@ -169,43 +205,51 @@ a:hover {
 
 @media screen and (max-width: 850px) {
   .logoParent {
-    padding: 15px;
-    flex-wrap: wrap;
-    /* Allow wrapping */
+    padding: 10px 15px;
+    gap: 10px;
   }
 
   .navigation {
-    width: 100%;
-    justify-content: center;
-    padding-top: 10px;
-    border-top: 1px solid #eee;
-    margin-top: 10px;
-    gap: 15px;
+    width: auto;
+    padding-top: 0;
+    margin-top: 0;
+    border-top: none;
+    justify-content: flex-end;
+    gap: 8px;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .logoParent {
     padding: 10px;
   }
 
   .navigation {
-    flex-direction: column;
-    gap: 10px;
-    align-items: stretch;
-    /* Stretch items to full width */
-    text-align: center;
+    flex-direction: row;
+    /* Ensure row even on small screens */
+    width: auto;
+    gap: 5px;
+  }
+
+  /* Hide text, show icons */
+  .navText {
+    display: none;
+  }
+
+  .navIcon {
+    display: block;
+    font-size: 20px;
   }
 
   .navLinks {
-    display: block;
-    padding: 10px;
-    border-radius: 4px;
-    background-color: #f9f9f9;
+    padding: 8px;
   }
 
-  .button {
-    width: 100%;
-    margin-top: 5px;
+  .contactButton {
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    min-width: unset;
+    border-radius: 50%;
   }
 }

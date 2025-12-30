@@ -1,5 +1,13 @@
 import { FunctionComponent } from "react";
 import Logo from "./Logo";
+import {
+  RiHomeLine,
+  RiTrophyLine,
+  RiBriefcaseLine,
+  RiToolsLine,
+  RiLightbulbLine,
+  RiMailSendLine
+} from "react-icons/ri";
 import styles from "./Header.module.css";
 
 import ThemeToggle from "./ThemeToggle";
@@ -25,13 +33,31 @@ const Header: FunctionComponent<HeaderType> = ({
           propColor="var(--gray-900)"
         />
         <div className={styles.navigation}>
-          <a href="#HeroSection" className={styles.navLinks}>Home</a>
-          <a href="#Achievements" className={styles.navLinks}>Awards</a>
-          <a href="#Portfolio" className={styles.navLinks}>Projects</a>
-          <a href="#WorkProcessCard" className={styles.navLinks}>Tools</a>
-          <a href="#Services" className={styles.navLinks}>My Interests</a>
+          <a href="#HeroSection" className={styles.navLinks}>
+            <RiHomeLine className={styles.navIcon} />
+            <span className={styles.navText}>Home</span>
+          </a>
+          <a href="#Achievements" className={styles.navLinks}>
+            <RiTrophyLine className={styles.navIcon} />
+            <span className={styles.navText}>Awards</span>
+          </a>
+          <a href="#Portfolio" className={styles.navLinks}>
+            <RiBriefcaseLine className={styles.navIcon} />
+            <span className={styles.navText}>Projects</span>
+          </a>
+          <a href="#WorkProcessCard" className={styles.navLinks}>
+            <RiToolsLine className={styles.navIcon} />
+            <span className={styles.navText}>Tools</span>
+          </a>
+          <a href="#Services" className={styles.navLinks}>
+            <RiLightbulbLine className={styles.navIcon} />
+            <span className={styles.navText}>My Interests</span>
+          </a>
           <ThemeToggle />
-          <a href="#ContactSection" className={styles.contactButton}>Contact</a>
+          <a href="#ContactSection" className={styles.contactButton}>
+            <span className={styles.navText}>Contact</span>
+            <RiMailSendLine className={styles.navIcon} />
+          </a>
         </div>
       </header>
     </div>

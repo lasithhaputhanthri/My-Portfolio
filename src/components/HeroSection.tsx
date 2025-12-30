@@ -69,7 +69,7 @@ const HeroSection: FunctionComponent<HeroSectionType> = ({
               download="H_L_N_B_Haputhanthri_CV_Embeded.pdf">
               <button className={styles.button2}>
                 <img
-                  className={styles.button2}
+                  className={styles.downloadIcon}
                   src={`${import.meta.env.BASE_URL}arrows--download.svg`}
                 />
                 <div className={styles.button2}>Download CV</div>
