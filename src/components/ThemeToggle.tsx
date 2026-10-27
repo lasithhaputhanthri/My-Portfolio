@@ -12,43 +12,7 @@ const ThemeToggle = () => {
     }, [theme]);
 
     const toggleTheme = () => {
-        // Check if View Transitions API is supported
-        if (!document.startViewTransition) {
-            setTheme(theme === "light" ? "dark" : "light");
-            return;
-        }
-
-        const transition = document.startViewTransition(() => {
-            setTheme(theme === "light" ? "dark" : "light");
-        });
-
-        transition.ready.then(() => {
-            // Get the center of the viewport
-            const x = window.innerWidth / 2;
-            const y = window.innerHeight / 2;
-
-            // Calculate distance to the furthest corner
-            const right = window.innerWidth - x;
-            const bottom = window.innerHeight - y;
-            const maxRadius = Math.hypot(
-                Math.max(x, right),
-                Math.max(y, bottom)
-            );
-
-            document.documentElement.animate(
-                {
-                    clipPath: [
-                        `circle(0px at ${x}px ${y}px)`,
-                        `circle(${maxRadius}px at ${x}px ${y}px)`,
-                    ],
-                },
-                {
-                    duration: 500,
-                    easing: "ease-in-out",
-                    pseudoElement: "::view-transition-new(root)",
-                }
-            );
-        });
+        setTheme(prevTheme => (prevTheme === "light" ? "dark" : "light"));
     };
 
     return (
@@ -57,7 +21,6 @@ const ThemeToggle = () => {
             onClick={toggleTheme}
             aria-label="Toggle Dark Mode"
         >
-
             {theme === "light" ? (
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="12" cy="12" r="5"></circle>

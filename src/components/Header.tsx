@@ -6,7 +6,9 @@ import {
   RiBriefcaseLine,
   RiToolsLine,
   RiLightbulbLine,
-  RiMailSendLine
+  RiMailSendLine,
+  RiTimeLine,
+  RiCpuLine
 } from "react-icons/ri";
 import styles from "./Header.module.css";
 
@@ -37,21 +39,29 @@ const Header: FunctionComponent<HeaderType> = ({
             <RiHomeLine className={styles.navIcon} />
             <span className={styles.navText}>Home</span>
           </a>
-          <a href="#Achievements" className={styles.navLinks}>
-            <RiTrophyLine className={styles.navIcon} />
-            <span className={styles.navText}>Awards</span>
+          <a href="#Experience" className={styles.navLinks}>
+            <RiTimeLine className={styles.navIcon} />
+            <span className={styles.navText}>Experience</span>
+          </a>
+          <a href="#Tools" className={styles.navLinks}>
+            <RiToolsLine className={styles.navIcon} />
+            <span className={styles.navText}>Tools</span>
           </a>
           <a href="#Portfolio" className={styles.navLinks}>
             <RiBriefcaseLine className={styles.navIcon} />
             <span className={styles.navText}>Projects</span>
           </a>
-          <a href="#WorkProcessCard" className={styles.navLinks}>
-            <RiToolsLine className={styles.navIcon} />
-            <span className={styles.navText}>Tools</span>
+          <a href="#PCBGallery" className={styles.navLinks}>
+            <RiCpuLine className={styles.navIcon} />
+            <span className={styles.navText}>PCB Gallery</span>
+          </a>
+          <a href="#Achievements" className={styles.navLinks}>
+            <RiTrophyLine className={styles.navIcon} />
+            <span className={styles.navText}>Awards</span>
           </a>
           <a href="#Services" className={styles.navLinks}>
             <RiLightbulbLine className={styles.navIcon} />
-            <span className={styles.navText}>My Interests</span>
+            <span className={styles.navText}>What I Do</span>
           </a>
           <a href="#ContactSection" className={styles.contactButton}>
             <span className={styles.navText}>Contact</span>

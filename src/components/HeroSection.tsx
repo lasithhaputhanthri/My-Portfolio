@@ -54,14 +54,15 @@ const HeroSection: FunctionComponent<HeroSectionType> = ({
 
             </div>
             <div className={styles.passionateEngineeringStudent}>
-              Undergraduate Electronics Engineer with experience in embedded programming, RF electronics, and digital
-              hardware design. Skilled in microcontrollers, embedded C/C++, circuit analysis, and hardware debugging. Familiar with sensors, communication interfaces, and RF concepts. Strong foundation in Electronics Engineering
-              principles
+              Electronics and Hardware Design Engineer specializing in RF electronics, 4–6 layer high-density PCB design, analog/mixed-signal circuits, and embedded systems. Taking hardware from schematic capture, Ansys HFSS / LTspice simulation, and multilayer layout (Altium Designer &amp; Siemens Xpedition) to board bring-up, SMD rework, and field validation.
             </div>
           </div>
           <div className={styles.heroActions}>
             <a href="#Portfolio" className={styles.button}>
               <div className={styles.button1}>My Projects</div>
+            </a>
+            <a href="#PCBGallery" className={styles.button}>
+              <div className={styles.button1}>PCB Gallery</div>
             </a>
             <a
               href={`${import.meta.env.BASE_URL}H_L_N_B_Haputhanthri_CV_Embeded.pdf`} // Update with the path to your document

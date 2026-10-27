@@ -15,12 +15,10 @@ const Services: FunctionComponent<ServicesType> = ({ className = "" }) => {
             <h1 className={styles.whatIDo1}>What I do?</h1>
             <div className={styles.myWorkSpansAcrossPcbDesigWrapper}>
               <div className={styles.myWorkSpans}>
-                My work spans across PCB design, embedded systems, analog
-                circuit development, and robotics, where I focus on creating
-                practical, efficient, and user-friendly devices. My passion lies
-                in developing projects that solve real-world problems,
-                particularly in the areas of smart devices, IoT applications,
-                and assistive technologies.
+                My work spans RF electronics, multilayer PCB design, embedded
+                firmware, and hardware validation — taking products from
+                schematic capture and simulation through board bring-up,
+                compliance testing, and field deployment.
               </div>
             </div>
           </div>
@@ -28,33 +26,39 @@ const Services: FunctionComponent<ServicesType> = ({ className = "" }) => {
       </div>
       <div className={styles.whatIDoCards}>
         <div className={styles.whatIDoCard}>
-          <h3 className={styles.userExperienceUx}>PCB Designing</h3>
+          <h3 className={styles.userExperienceUx}>PCB Design &amp; Layout</h3>
           <div className={styles.loremIpsumDolor}>
-            Experienced in designing 1-6 layer PCBs for mixed signals and RF
-            applications. I use Altium Designer to create efficient,
-            high-performance circuit boards tailored to various electronic
-            needs.
+            Design and review 1–6 layer high-density PCBs for mixed-signal and
+            RF applications using Altium Designer and Siemens Xpedition.
+            Impedance-controlled routing, power integrity analysis, and
+            DFM-ready outputs for production.
           </div>
           <div className={styles.serviceImage} />
         </div>
         <div className={styles.whatIDoCard}>
-          <h3 className={styles.userExperienceUx}>Embedded Systems</h3>
+          <h3 className={styles.userExperienceUx}>Embedded Systems &amp; Firmware</h3>
           <div className={styles.loremIpsumDolor}>
-            Experienced in developing embedded systems, including programming microcontrollers and integrating sensors. I focus on creating efficient and reliable solutions that interact effectively with hardware for practical and innovative applications.
+            Develop embedded firmware on STM32, ESP32, and ARM Cortex platforms
+            in C/C++. Sensor integration, communication protocols (SPI, I2C, UART, Modbus),
+            RTOS scheduling, and OTA update pipelines for IoT field devices.
           </div>
           <div className={styles.serviceImage} />
         </div>
         <div className={styles.whatIDoCard}>
-          <h3 className={styles.userExperienceUx}>Robotics</h3>
+          <h3 className={styles.userExperienceUx}>RF &amp; Antenna Engineering</h3>
           <div className={styles.loremIpsumDolor}>
-            Experienced in designing robotic systems, including hardware integration and control. I focus on creating lightweight, functional robots that enhance accessibility and deliver practical, user-friendly solutions.
+            RF front-end design, antenna development (IFA, patch), and EM
+            simulation in Ansys HFSS. Experience with CW/FMCW radar systems
+            for drone detection in 6 GHz and mmWave bands.
           </div>
           <div className={styles.serviceImage} />
         </div>
         <div className={styles.whatIDoCard}>
-          <h3 className={styles.userExperienceUx}>Digital System Design</h3>
+          <h3 className={styles.userExperienceUx}>Hardware Validation &amp; Debug</h3>
           <div className={styles.loremIpsumDolor}>
-            Familiar with FPGA digital system design, focusing on developing basic logic circuits and learning to optimize performance for various digital applications. I am gaining experience in using FPGA technology to create effective solutions.
+            Board bring-up, signal integrity verification with oscilloscopes
+            and logic analyzers, power-rail characterization, SMD rework, and
+            systematic engineering test documentation.
           </div>
           <div className={styles.serviceImage} />
         </div>

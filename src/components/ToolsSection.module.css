@@ -1,0 +1,248 @@
+/* Tools Section — Floating Marquee Rows */
+.toolsSection {
+  align-self: stretch;
+  background-color: transparent;
+  padding: 80px 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-family: var(--body-regular-400);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.toolsInner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+}
+
+/* Header — Clean and minimal, no long explanations */
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 2.75rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+/* Marquee Container with Fade Masks */
+.marqueeWrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+}
+
+/* Gradient edge masks */
+.marqueeWrapper::before,
+.marqueeWrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 140px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.marqueeWrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-body, #ffffff), transparent);
+}
+
+.marqueeWrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-body, #ffffff), transparent);
+}
+
+/* Single Marquee Row */
+.marqueeRow {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  padding: 8px 0;
+}
+
+/* Track Left to Right */
+.trackToRight {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: max-content;
+  animation: scrollRight 40s linear infinite;
+  will-change: transform;
+}
+
+/* Track Right to Left */
+.trackToLeft {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: max-content;
+  animation: scrollLeft 40s linear infinite;
+  will-change: transform;
+}
+
+/* Pause on hover */
+.marqueeRow:hover .trackToRight,
+.marqueeRow:hover .trackToLeft {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Tool Card */
+.toolCard {
+  background-color: var(--gray-white);
+  border-radius: 12px;
+  padding: 10px 18px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(165, 61, 255, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+  user-select: none;
+  cursor: default;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  flex-shrink: 0;
+}
+
+.toolCard:hover {
+  border-color: var(--primary-500);
+  box-shadow: 0 8px 24px rgba(165, 61, 255, 0.2);
+}
+
+/* Floating Vertical Oscillations */
+.floatA {
+  animation: floatBobA 3.6s ease-in-out infinite alternate;
+}
+
+.floatB {
+  animation: floatBobB 4.2s ease-in-out infinite alternate;
+}
+
+.floatC {
+  animation: floatBobC 3.2s ease-in-out infinite alternate;
+}
+
+@keyframes floatBobA {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-7px);
+  }
+}
+
+@keyframes floatBobB {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes floatBobC {
+  0% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Icon Wrapper */
+.iconWrapper {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background-color: rgba(165, 61, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.toolIcon {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+/* Tool Details */
+.toolName {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-darkslategray-100);
+  letter-spacing: 0.01em;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .toolsSection {
+    padding: 60px 0;
+  }
+
+  .sectionTitle {
+    font-size: 2.25rem;
+  }
+
+  .marqueeWrapper::before,
+  .marqueeWrapper::after {
+    width: 60px;
+  }
+
+  .toolCard {
+    padding: 8px 14px;
+    gap: 10px;
+  }
+
+  .iconWrapper {
+    width: 30px;
+    height: 30px;
+  }
+
+  .toolIcon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .toolName {
+    font-size: 0.875rem;
+  }
+}
